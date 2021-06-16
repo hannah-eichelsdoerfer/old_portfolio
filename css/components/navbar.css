@@ -1,0 +1,9 @@
+#navbar {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar-links {
+  display: flex;
+}

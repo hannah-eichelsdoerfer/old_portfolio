@@ -1,0 +1,22 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+
+/* Components */
+@import "components/navbar.css";
+@import "components/footer.css";
+
+/* Universal Styles for all pages */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
