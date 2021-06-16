@@ -1,0 +1,50 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+
+/* Components */
+@import "components/navbar.css";
+@import "components/footer.css";
+@import "components/buttons.css";
+@import "components/cards.css";
+@import "components/theme-toggler.css";
+
+/* Universal Styles for all pages */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  transition: background 0.5s linear;
+  /* transition: color 0.5s linear; */
+  box-sizing: border-box;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.social-links{
+  position:fixed;
+  top: 45%;
+  left: 1%;
+}
+
+.social-links a {
+  display: block;
+  margin-bottom: 10px;
+}
