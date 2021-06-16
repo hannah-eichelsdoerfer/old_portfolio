@@ -1,9 +1,13 @@
 #navbar {
-  background-color: antiquewhite;
   display: flex;
   justify-content: space-between;
+  padding: 20px 20px;
 }
 
 #navbar-links {
   display: flex;
+}
+
+#navbar-links a {
+  margin: 0px 10px;
 }

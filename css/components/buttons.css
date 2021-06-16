@@ -1,0 +1,20 @@
+@-webkit-keyframes bounce { 0%, 100% { top: 0; } 30% { top: 10px; } 50% { top: 0px; } 80% { top: 10px; } }
+@-moz-keyframes bounce { 0%, 100% { top: 0; } 30% { top: 10px; } 50% { top: 0px; } 80% { top: 10px; } }
+@keyframes bounce { 0%, 100% { top: 0; } 30% { top: 10px; } 50% { top: 0px; } 80% { top: 10px; } }
+
+#bouncing-button { 
+  position: relative;
+}
+
+button {
+  -webkit-animation: bounce 2s infinite ease-in-out; 
+  -moz-animation: bounce 2s infinite ease-in-out;
+  border: none;
+  background-color: inherit;
+  font-size: 3em;
+}
+
+button:hover {
+  color: lightblue;
+  transition: 0.5s;
+}

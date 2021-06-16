@@ -12,7 +12,7 @@
 <body>
   <nav id="navbar">
     <div class="logo">
-      HANNAH
+      <i class="fas fa-code"></i> HANNAH
     </div>
     <div id="navbar-links">
       <div>
@@ -28,19 +28,60 @@
         <a href="">Contact</a>
       </div>
     </div>
+    <div id="theme-toggler">
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
   </nav>
   <main>
-    <h1>Hi, I'm Hannah 👋🏼</h1>
-    <p><span id="header-typed"></span>Developer</p>
+    <header>
+      <h1>Hi, I'm Hannah 👋🏼</h1>
+      <p><span id="header-typed"></span>Developer</p>
+      <button id="bouncing-button"><i class="fas fa-chevron-down"></i></button>
+    </header>
 
-  </main>
-  <footer>
-    <div class="social-links">
-      <a href=""><i class="fab fa-linkedin"></i></a>
-      <a href=""><i class="fab fa-github"></i></a>
-      <a href=""><i class="fab fa-codepen"></i></a>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="images/localshopper.jpg" alt="">
+        <a href="https://github.com/hannah-eichelsdoerfer/rails-camperworld" target="blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="project-card">
+        <img src="images/camperworld.jpg" alt="">
+        <a href="https://github.com/hannah-eichelsdoerfer/local_shopper" target="blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="project-card">
+        <img src="images/camperworld.jpg" alt="">
+        <a href="https://github.com/hannah-eichelsdoerfer/local_shopper" target="blank"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="project-card">
+        <img src="images/localshopper.jpg" alt="">
+        <a href="https://github.com/hannah-eichelsdoerfer/rails-camperworld" target="blank"><i class="fab fa-github"></i></a>
+      </div>
     </div>
-    <p>Hannah, 2021</p>
+
+    <div class="skills-container">
+
+    </div>
+  </main>
+
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/hannah-eichelsdoerfer/" target="blank"><i class="fab fa-linkedin"></i></a>
+    <a href="" target="blank"><i class="fab fa-github"></i></a>
+    <a href="" target="blank"><i class="fab fa-codepen"></i></a>
+  </div>
+
+  <footer>
+    <div>
+      Contact Me
+    </div>
+    &#169; Hannah, 2021
   </footer>
+
+  <script src="js/components/typed.js"></script>
+  <script src="js/components/theme-toggler.js"></script>
 </body>
 </html>
