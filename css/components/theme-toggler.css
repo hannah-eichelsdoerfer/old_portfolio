@@ -13,7 +13,7 @@
 }
 
 .label {
-	background-color: rgb(182, 182, 182);
+	border: 1px solid grey;
 	border-radius: 50px;
 	cursor: pointer;
 	display: flex;
@@ -35,7 +35,7 @@
 }
 
 label .ball {
-	background-color: rgb(226, 226, 226);
+	background-color: lightblue;
 	border-radius: 50%;
 	position: absolute;
 	top: 2px;

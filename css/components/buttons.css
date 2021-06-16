@@ -3,6 +3,8 @@
 @keyframes bounce { 0%, 100% { top: 0; } 30% { top: 10px; } 50% { top: 0px; } 80% { top: 10px; } }
 
 #bouncing-button { 
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   position: relative;
 }
 
