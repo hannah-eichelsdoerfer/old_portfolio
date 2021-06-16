@@ -71,7 +71,38 @@ a:hover {
   }
 
   .social-links a {
+    font-size: 1.3rem;
     display: block;
+    margin: 0;
     margin-bottom: 10px;
   }
+}
+
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+h2:after {
+  margin: 0 0 0 30px;
+}
+
+h2:before, h2:after {
+  content: '';
+  border-top: 1px solid lightblue;
+  margin: 0 30px 0 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 20px;
+  flex: 1 0 20px;
 }
