@@ -5,9 +5,35 @@
 }
 
 #navbar-links {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+}
+
+#navbar-links.show {
   display: flex;
 }
 
-#navbar-links a {
-  margin: 0px 20px;
+.hamburger {
+  color: #333333;
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (min-width: 760px) {
+  #navbar-links {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+  
+  #navbar-links a {
+    margin: 0px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
 }
