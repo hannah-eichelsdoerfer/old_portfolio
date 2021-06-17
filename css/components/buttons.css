@@ -3,8 +3,8 @@
 @keyframes bounce { 0%, 100% { top: 0; } 30% { top: 10px; } 50% { top: 0px; } 80% { top: 10px; } }
 
 #bouncing-button { 
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   position: relative;
   color: inherit;
 }
@@ -58,9 +58,15 @@
   font-size: 1.5rem;
 }
 
-#see-more-projects {
-  margin-top: 60px;
-  text-align: right;
+@media (min-width: 760px) {
+  #bouncing-button { 
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  #see-more-projects {
+    margin-top: 60px;
+    text-align: right;
+  }
 }
 
 /* #back-to-top {
