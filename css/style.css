@@ -24,10 +24,6 @@ main {
   margin: 0 auto;
 }
 
-header {
-  padding-top: 15%;
-}
-
 header h1 {
   font-size: 4rem;
 }
@@ -54,6 +50,10 @@ a:hover {
   transform: scale(1.2);
 }
 
+#projects, #about, #contact {
+  padding-top: 30px;
+}
+
 .projects-container {
   margin-top: 50px;
   display: grid;
@@ -74,17 +74,19 @@ a:hover {
     top: 40%;
     left: 1%;
   }
-
+  
   .social-links a {
     font-size: 1.3rem;
     display: block;
     margin: 0;
     margin: 10px 0;
   }
+  
+  header {
+    padding-top: 15%;
+  }
 
   #projects, #about, #contact {
-    width: 100%;
-    padding-top: 30px;
     text-align: left;
     font-size: 3rem;
   }
