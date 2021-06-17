@@ -16,6 +16,7 @@ body {
   transition: background 0.5s linear;
   /* transition: color 0.5s linear; */
   box-sizing: border-box;
+  color: #333333;
 }
 
 main {
@@ -31,8 +32,8 @@ header h1 {
   font-size: 4rem;
 }
 
-#projects {
-  padding-top: 30px;
+h2 {
+  margin-bottom: 0;
 }
 
 a {
@@ -49,6 +50,10 @@ a:hover {
   margin: 0 20px;
 }
 
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
 .projects-container {
   margin-top: 50px;
   display: grid;
@@ -56,17 +61,17 @@ a:hover {
   grid-gap: 3rem 1rem;
 }
 
-@media (min-width: 760px) {
-  .projects-container {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem 1rem;
-  }
 
+.profile-picture {
+  width: 250px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+@media (min-width: 760px) {
   .social-links{
     position:fixed;
-    top: 45%;
+    top: 40%;
     left: 1%;
   }
 
@@ -74,35 +79,64 @@ a:hover {
     font-size: 1.3rem;
     display: block;
     margin: 0;
-    margin-bottom: 10px;
+    margin: 10px 0;
   }
-}
 
-h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  max-width: 70%;
-  margin: 0 auto;
-  padding-bottom: 3em;
-}
+  #projects, #about, #contact {
+    width: 100%;
+    padding-top: 30px;
+    text-align: left;
+    font-size: 3rem;
+  }
 
-h2:after {
-  margin: 0 0 0 30px;
-}
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
 
-h2:before, h2:after {
-  content: '';
-  border-top: 1px solid lightblue;
-  margin: 0 30px 0 0;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 20px;
-  flex: 1 0 20px;
+  .about-container {
+    height: calc(100vh - 150px);
+  }
+  
+  #about-picture-description {
+    display: flex;
+    align-items: center;
+  }
+  
+  #about-me {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #about-description, #skills-container {
+    text-align: left;
+    padding: 0px 44px;
+  }
+  
+  #about-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin-top: 18px;
+  }
+
+  #about-details p {
+    margin: 5px 0;
+  }
+
+  #skills-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+  }
+
+  .call-to-action {
+    margin-top: 20px;
+  }
+
+  .contact-container {
+    height: calc(100vh - 150px);
+  }
 }
