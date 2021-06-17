@@ -15,9 +15,8 @@
 <body>
   <nav>
     <div id="navbar">
-
       <div class="logo">
-        <i class="fas fa-code"></i> <strong>HANNAH EICH</strong> 
+        <a href=""><i class="fas fa-code"></i> <strong>HANNAH EICH</strong> </a>
       </div>
       <button class="hamburger">
         <i class="fas fa-bars"></i>
@@ -57,6 +56,7 @@
           typeSpeed: 80
         });
       </script>
+
       <div class="social-links">
         <a href="https://www.linkedin.com/in/hannah-eichelsdoerfer/" target="blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/hannah-eichelsdoerfer" target="blank"><i class="fab fa-github"></i></a>
@@ -69,40 +69,44 @@
 
     <h2 id="projects">&#60; Projects &#62;</h2>
     <div class="projects-container">
-      <div class="project-card" data-aos="zoom-in" data-aos-duration="2000">
+      <div class="project-card" data-aos="fade-up" data-aos-duration="2000">
         <img src="images/localshopper.jpg" alt="">
+        <h4>Localshopper</h4>
         <div class="project-card-content">
           <p><small>Ruby on Rails | JavaScript | SCSS | PostgreSQL</small></p>
           <div class="project-card-links">
             <a href="https://github.com/hannah-eichelsdoerfer/rails-camperworld" target="blank"><i class="fab fa-github bigger-icon"></i></a>
-            <i class="fas fa-external-link-alt bigger-icon"></i>
+            <a href="https://www.localshopper.me/" target="blank"><i class="fas fa-external-link-alt bigger-icon"></i></a>
           </div>
         </div>
       </div>
-      <div class="project-card" data-aos="zoom-in" data-aos-duration="2000">
+      <div class="project-card" data-aos="fade-up" data-aos-duration="2000">
         <img src="images/camperworld.jpg" alt="">
+        <h4>Camperworld</h4>
         <div class="project-card-content">
           <p><small>Ruby on Rails | JavaScript | SCSS | PostgreSQL</small></p>
+          <div class="project-card-links">
+            <a href="https://github.com/hannah-eichelsdoerfer/local_shopper" target="blank"><i class="fab fa-github bigger-icon"></i></a>
+            <a href=""target="blank"><i class="fas fa-external-link-alt bigger-icon"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-duration="2000">
+        <img src="images/camperworld.jpg" alt="">
+        <h4>Personal Blog</h4>
+        <div class="project-card-content">
+          <p><small>JavaScript | CSS | Express | MongoDB </small></p>
           <div class="project-card-links">
             <a href="https://github.com/hannah-eichelsdoerfer/local_shopper" target="blank"><i class="fab fa-github bigger-icon"></i></a>
             <i class="fas fa-external-link-alt bigger-icon"></i>
           </div>
         </div>
       </div>
-      <div class="project-card" data-aos="zoom-in" data-aos-duration="2000">
-        <img src="images/camperworld.jpg" alt="">
-        <div class="project-card-content">
-          <p><small>Ruby on Rails | JavaScript | SCSS | PostgreSQL</small></p>
-          <div class="project-card-links">
-            <a href="https://github.com/hannah-eichelsdoerfer/local_shopper" target="blank"><i class="fab fa-github bigger-icon"></i></a>
-            <i class="fas fa-external-link-alt bigger-icon"></i>
-          </div>
-        </div>
-      </div>
-      <div class="project-card" data-aos="zoom-in" data-aos-duration="2000">
+      <div class="project-card" data-aos="fade-up" data-aos-duration="2000">
         <img src="images/localshopper.jpg" alt="">
+        <h4>Portfolio</h4>
         <div class="project-card-content">
-          <p><small>Ruby on Rails | JavaScript | SCSS | PostgreSQL</small></p>
+          <p><small>HTML | CSS | JavaScript </small></p>
           <div class="project-card-links">
             <a href="https://github.com/hannah-eichelsdoerfer/rails-camperworld" target="blank"><i class="fab fa-github bigger-icon"></i></a>
             <i class="fas fa-external-link-alt bigger-icon"></i>
@@ -177,7 +181,6 @@
         </div>
         <div id="about-details" data-aos="fade-left" data-aos-duration="2000">
           <p>Based in Berlin, Germany</p>
-          <p>Open to remote/freelance</p>
           <p>EN | GER | ES </p>
           <div class="call-to-action">
             <a href="resume.html" target="blank">Resume</a>
@@ -188,28 +191,26 @@
     </div>
 
     <h2 id="contact">&#60; Get in Touch &#62;</h2>
-    <div class="contact-container" data-aos="fade-right" data-aos-duration="2000">
+    <div class="contact-container" data-aos="fade-up" data-aos-duration="2000">
       <div>
-        <p>Do you have a project in mind or would you like me to join your team? Don't hesitate to contact me:</p>
-        <p>Whether you need someone to build your website, are looking for a new developer to join your team, or would like to know more about what I do, feel free to send me a message below and I will be in touch with you.</p>
-        <p>
-          Interested in starting a project together?
-          Looking for a new junior developer to join your team?
-          Want to know more about my work and journey?
-        </p>
-        <h3><i class="fas fa-envelope"></i> <a href="mailto:hannaheichelsdoerfer@gmail.com?subject=Getting in Touch">hannaheichelsdoerfer@gmail.com</a></h3>
-        <p><a href="mailto:hannaheichelsdoerfer@gmail.com?subject=Getting in Touch" class="contact-links">Email me</a></p>
-        <h3><i class="fas fa-phone-alt"></i> <a href="tel:+43-664-2380824">+43 664 2380824</a></h3>
-        <p><a href="tel:+43-664-2380824" class="contact-links">Call me</a></p>
-        <p></p>
+        <p>Wheter you are interested in starting a project together, looking for a junior developer to join your team, need a website, want to know more about me or simply want to conntect - feel free to reach out:</p>
+        <div class="contact-actions">
+          <div>
+            <!-- <h3><i class="fas fa-envelope"></i> </h3>
+            <h3><a href="mailto:hannaheichelsdoerfer@gmail.com?subject=Getting in Touch">hannaheichelsdoerfer@gmail.com</a></h3> -->
+            <p><a href="mailto:hannaheichelsdoerfer@gmail.com?subject=Getting in Touch" class="contact-links"><i class="fas fa-envelope"></i> Email me</a></p>
+          </div>
+          <!-- <div>
+            <h3><i class="fas fa-phone-alt"></i></h3>
+            <h3><a href="tel:+43-664-2380824">+43 664 2380824</a></h3>
+            <p><a href="tel:+43-664-2380824" class="contact-links">Call me</a></p>
+          </div> -->
+        </div>
       </div>
     </div>
   </main>
 
   <footer>
-    <div>
-      Contact Me
-    </div>
     &#169; Hannah, 2021
   </footer>
 

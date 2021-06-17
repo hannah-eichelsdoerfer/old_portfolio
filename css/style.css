@@ -68,7 +68,20 @@ a:hover {
   grid-gap: 3rem 1rem;
 }
 
+.contact-actions {
+  margin-top: 50px;
+}
+
 @media (min-width: 760px) {
+  #skills-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
   /* html, body {
     scroll-snap-type: y mandatory;
     scroll-padding: 20px;
@@ -138,10 +151,7 @@ a:hover {
   }
 
   #skills-container {
-    flex: 1;
-    display: flex;
     justify-content: flex-start;
-    gap: 10%;
   }
 
   .call-to-action {
@@ -149,7 +159,7 @@ a:hover {
   }
 
   .contact-container {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 200px);
     text-align: left;
     padding: 0 44px;
     display: flex;
@@ -160,6 +170,9 @@ a:hover {
   }
 }
 
-.replace-image {
-  height: 200px;
-}
+/* .contact-actions {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+} */
