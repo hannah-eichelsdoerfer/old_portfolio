@@ -11,12 +11,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 }
 
-@media (min-width: 720px) {
-
+.project-card-links a {
+  margin: 0 20px;
 }
 
-@media (min-width: 1200px) {
 
-}

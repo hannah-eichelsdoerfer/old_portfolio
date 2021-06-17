@@ -15,3 +15,24 @@ dropdown.addEventListener('click', (event) => {
   // console.log(event);
   dropdownLinks.classList.toggle('show');
 });
+
+// PROJECT CARDS
+// let projectDescription = document.createElement("p");
+
+// let replace = document.createElement("div")
+
+// const projectCards = document.querySelectorAll('.project-card');
+// projectCards.forEach((projectCard) => {
+//   projectCard.addEventListener("mouseover", (element) => {
+//     element.currentTarget.classList.add("bg-light");
+//     let image = element.querySelector("img");
+//     image.replaceWith(replace);
+//   });
+// });
+
+// projectCards.forEach((projectCard) => {
+//   projectCard.addEventListener("mouseout", (element) => {
+//     element.currentTarget.classList.remove("bg-light");
+//   });
+// });
+

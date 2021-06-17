@@ -6,9 +6,10 @@
 @import "components/footer.css";
 @import "components/buttons.css";
 @import "components/cards.css";
-@import "components/theme-toggler.css";
 
 /* Universal Styles for all pages */
+html { scroll-behavior: smooth; } 
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -50,6 +51,12 @@ a:hover {
   transform: scale(1.2);
 }
 
+.profile-picture {
+  width: 250px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
 #projects, #about, #contact {
   padding-top: 30px;
 }
@@ -61,14 +68,12 @@ a:hover {
   grid-gap: 3rem 1rem;
 }
 
-
-.profile-picture {
-  width: 250px;
-  border-radius: 50%;
-  filter: grayscale(100%);
-}
-
 @media (min-width: 760px) {
+  /* html, body {
+    scroll-snap-type: y mandatory;
+    scroll-padding: 20px;
+  } */
+
   .social-links{
     position:fixed;
     top: 40%;
@@ -86,9 +91,14 @@ a:hover {
     padding-top: 15%;
   }
 
+  /* h1 {
+    scroll-snap-align: center;
+  } */
+
   #projects, #about, #contact {
     text-align: left;
     font-size: 3rem;
+    /* scroll-snap-align: start; */
   }
 
   .projects-container {
@@ -140,5 +150,16 @@ a:hover {
 
   .contact-container {
     height: calc(100vh - 150px);
+    text-align: left;
+    padding: 0 44px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 40px;
   }
+}
+
+.replace-image {
+  height: 200px;
 }

@@ -32,3 +32,29 @@
   margin: 10px 0;
 }
 
+#about-details a:hover {
+  border: 1px solid goldenrod;
+  transition: ease-in;
+}
+
+.contact-links {
+  border: 1px solid lightblue;
+  color: lightblue;
+  background-color: transparent;
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin: 10px 0;
+}
+
+.contact-links:hover {
+  background-color: lightblue;
+  color: white;
+  transition: 0.5s;
+}
+
+.bigger-icon {
+  font-size: 1.5rem;
+}
+
+
+
