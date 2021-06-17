@@ -8,7 +8,7 @@
   position: relative;
 }
 
-button {
+#bouncing-button {
   -webkit-animation: bounce 2s infinite ease-in-out; 
   -moz-animation: bounce 2s infinite ease-in-out;
   border: none;
@@ -16,7 +16,19 @@ button {
   font-size: 3em;
 }
 
-button:hover {
+#bouncing-button:hover {
   color: lightblue;
   transition: 0.5s;
 }
+
+#about-details a {
+  border: 1px solid lightblue;
+  color: lightblue;
+  background-color: transparent;
+  padding: 5px 15px;
+  border-radius: 15px;
+  width: 120px;
+  display: block;
+  margin: 10px 0;
+}
+

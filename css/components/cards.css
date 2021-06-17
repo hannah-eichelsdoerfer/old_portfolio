@@ -7,6 +7,12 @@
   width: 100%;
 }
 
+.project-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media (min-width: 720px) {
 
 }
