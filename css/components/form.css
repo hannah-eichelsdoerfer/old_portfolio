@@ -11,6 +11,10 @@ input {
   margin-bottom: 15px;
 }
 
+input:focus-visible {
+  border: 3px solid red;
+}
+
 .form-buttons {
   display: flex;
   justify-content: flex-end;
