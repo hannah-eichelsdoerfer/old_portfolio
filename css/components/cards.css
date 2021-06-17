@@ -1,6 +1,11 @@
 .project-card {
   padding: 10px;
   box-shadow: 2px 4px 10px rgb(0 0 0 / 8%);
+  transition: 0.5s;
+}
+
+.project-card:hover {
+  transform: scale(1.01);
 }
 
 .project-card h4 {

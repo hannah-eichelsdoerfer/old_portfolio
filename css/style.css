@@ -6,6 +6,7 @@
 @import "components/footer.css";
 @import "components/buttons.css";
 @import "components/cards.css";
+@import "components/form.css";
 
 /* Universal Styles for all pages */
 html { scroll-behavior: smooth; } 
@@ -61,7 +62,7 @@ a:hover {
   padding-top: 30px;
 }
 
-.projects-container {
+.projects {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -115,6 +116,10 @@ a:hover {
   }
 
   .projects-container {
+    height: calc(100vh - 150px);
+  }
+
+  .projects {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
@@ -159,7 +164,7 @@ a:hover {
   }
 
   .contact-container {
-    height: calc(100vh - 200px);
+    height: calc(100vh - 190px);
     text-align: left;
     padding: 0 44px;
     display: flex;

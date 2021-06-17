@@ -60,58 +60,39 @@
       <div class="social-links">
         <a href="https://www.linkedin.com/in/hannah-eichelsdoerfer/" target="blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/hannah-eichelsdoerfer" target="blank"><i class="fab fa-github"></i></a>
-        <a href="" target="blank"><i class="fab fa-codepen"></i></a>
+        <a href="https://codepen.io/hannah-eichelsdoerfer" target="blank"><i class="fab fa-codepen"></i></a>
       </div>
-      
       <a href="#projects"><button id="bouncing-button"><i class="fas fa-chevron-down" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="500"></i></button></a>
-      
     </header>
 
     <h2 id="projects">&#60; Projects &#62;</h2>
-    <div class="projects-container">
-      <div class="project-card" data-aos="fade-up" data-aos-duration="2000">
-        <img src="images/localshopper.jpg" alt="">
-        <h4>Localshopper</h4>
-        <div class="project-card-content">
-          <p><small>Ruby on Rails | JavaScript | SCSS | PostgreSQL</small></p>
-          <div class="project-card-links">
-            <a href="https://github.com/hannah-eichelsdoerfer/rails-camperworld" target="blank"><i class="fab fa-github bigger-icon"></i></a>
-            <a href="https://www.localshopper.me/" target="blank"><i class="fas fa-external-link-alt bigger-icon"></i></a>
+    <div class="projects-container" data-aos="fade-up" data-aos-duration="2000">
+      <div class="projects">
+        <div class="project-card">
+          <img src="images/localshopper.jpg" alt="">
+          <h4>Localshopper</h4>
+          <div class="project-card-content">
+            <p><small>Ruby on Rails | JavaScript | SCSS | PostgreSQL</small></p>
+            <div class="project-card-links">
+              <a href="https://github.com/hannah-eichelsdoerfer/local_shopper" target="blank"><i class="fab fa-github bigger-icon"></i></a>
+              <a href="https://www.localshopper.me/" target="blank"><i class="fas fa-external-link-alt bigger-icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/camperworld.jpg" alt="">
+          <h4>Camperworld</h4>
+          <div class="project-card-content">
+            <p><small>Ruby on Rails | JavaScript | SCSS | PostgreSQL</small></p>
+            <div class="project-card-links">
+              <a href="https://github.com/hannah-eichelsdoerfer/rails-camperworld" target="blank"><i class="fab fa-github bigger-icon"></i></a>
+              <a href="https://camperworld.herokuapp.com/" target="blank"><i class="fas fa-external-link-alt bigger-icon"></i></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="project-card" data-aos="fade-up" data-aos-duration="2000">
-        <img src="images/camperworld.jpg" alt="">
-        <h4>Camperworld</h4>
-        <div class="project-card-content">
-          <p><small>Ruby on Rails | JavaScript | SCSS | PostgreSQL</small></p>
-          <div class="project-card-links">
-            <a href="https://github.com/hannah-eichelsdoerfer/local_shopper" target="blank"><i class="fab fa-github bigger-icon"></i></a>
-            <a href=""target="blank"><i class="fas fa-external-link-alt bigger-icon"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card" data-aos="fade-up" data-aos-duration="2000">
-        <img src="images/camperworld.jpg" alt="">
-        <h4>Personal Blog</h4>
-        <div class="project-card-content">
-          <p><small>JavaScript | CSS | Express | MongoDB </small></p>
-          <div class="project-card-links">
-            <a href="https://github.com/hannah-eichelsdoerfer/local_shopper" target="blank"><i class="fab fa-github bigger-icon"></i></a>
-            <i class="fas fa-external-link-alt bigger-icon"></i>
-          </div>
-        </div>
-      </div>
-      <div class="project-card" data-aos="fade-up" data-aos-duration="2000">
-        <img src="images/localshopper.jpg" alt="">
-        <h4>Portfolio</h4>
-        <div class="project-card-content">
-          <p><small>HTML | CSS | JavaScript </small></p>
-          <div class="project-card-links">
-            <a href="https://github.com/hannah-eichelsdoerfer/rails-camperworld" target="blank"><i class="fab fa-github bigger-icon"></i></a>
-            <i class="fas fa-external-link-alt bigger-icon"></i>
-          </div>
-        </div>
+      <div id="see-more-projects">
+        <button class="custom-button"><span style="display: none">See more projects</span><i class="fas fa-arrow-right"></i></button>
       </div>
     </div>
 
@@ -119,15 +100,15 @@
     <div class="about-container">
       <div id="about-picture-description">
         <p id="about-description" data-aos="fade-right" data-aos-duration="2000">
-          I am a self-taught, as well asbootcamp graduate,
+          I am a self-taught, as well as bootcamp graduate,
           full-stack web developer, eager to keep on learning. 
           I am passionate about creating innovative solutions aiming for smooth user 
           experiences while keeping a high functionality.
-          I am a self-taught, as well asbootcamp graduate,
+          I am a self-taught, as well as bootcamp graduate,
           full-stack web developer, eager to keep on learning. 
           I am passionate about creating innovative solutions aiming for smooth user 
           experiences while keeping a high functionality.
-          I am a self-taught, as well asbootcamp graduate,
+          I am a self-taught, as well as bootcamp graduate,
           full-stack web developer, eager to keep on learning. 
           I am passionate about creating innovative solutions aiming for smooth user 
           experiences while keeping a high functionality.
@@ -135,28 +116,7 @@
         <img data-aos="fade-left" data-aos-duration="2000" class="profile-picture" src="images/hannah_eichelsdoerfer.jpg" alt="Portrait shot of Hannah Eichelsdoerfer">
       </div>
       <div id="about-me">
-        
-        <!-- <div class="skills-container" data-aos="fade-up" data-aos-duration="2000">
-          <div>
-            <h3>FRONT-END</h3>
-            <p>HTML</p>
-            <p>CSS | SCSS | Bootstrap </p>
-            <p>JavaScript</p>
-          </div>
-          <div>
-            <h3>BACK-END</h3>
-            <p><span class="programming-language">Ruby (on Rails)</span></p>
-            <p><span class="programming-language">Node.js</span></p>
-            <p>Express</p>
-            <p>Python</p>
-          </div>
-          <div>
-            <h3>DATABASES</h3>
-            <p>SQL</p> 
-            <p>MongoDB</p>
-          </div>
-        </div> -->
-        <div id="skills-container" data-aos="fade-up" data-aos-duration="2000">
+        <div id="skills-container" data-aos="fade-right" data-aos-duration="2000">
           <div>
             <h3>LANGUAGES</h3>
             <p>JavaScript</p>
@@ -180,8 +140,8 @@
           </div>
         </div>
         <div id="about-details" data-aos="fade-left" data-aos-duration="2000">
-          <p>Based in Berlin, Germany</p>
-          <p>EN | GER | ES </p>
+          <p><i class="fas fa-map-marker-alt"></i> Berlin, Germany</p>
+          <!-- <p>EN | GER | ES </p> -->
           <div class="call-to-action">
             <a href="resume.html" target="blank">Resume</a>
             <a href="#contact">Contact Me</a>
@@ -195,20 +155,56 @@
       <div>
         <p>Wheter you are interested in starting a project together, looking for a junior developer to join your team, need a website, want to know more about me or simply want to conntect - feel free to reach out:</p>
         <div class="contact-actions">
-          <div>
-            <!-- <h3><i class="fas fa-envelope"></i> </h3>
-            <h3><a href="mailto:hannaheichelsdoerfer@gmail.com?subject=Getting in Touch">hannaheichelsdoerfer@gmail.com</a></h3> -->
-            <p><a href="mailto:hannaheichelsdoerfer@gmail.com?subject=Getting in Touch" class="contact-links"><i class="fas fa-envelope"></i> Email me</a></p>
-          </div>
+          <!-- <div>
+            <a class="custom-button" href="mailto:hannaheichelsdoerfer@gmail.com?subject=Getting in Touch"><i class="fas fa-envelope"></i> hannaheichelsdoerfer@gmail.com</a>
+            <p><a href="mailto:hannaheichelsdoerfer@gmail.com?subject=Let's connect 👋🏻" class="custom-button"><i class="fas fa-envelope"></i> Email me</a></p>
+          </div> -->
           <!-- <div>
             <h3><i class="fas fa-phone-alt"></i></h3>
             <h3><a href="tel:+43-664-2380824">+43 664 2380824</a></h3>
-            <p><a href="tel:+43-664-2380824" class="contact-links">Call me</a></p>
+            <p><a href="tel:+43-664-2380824" class="custom-button">Call me</a></p>
           </div> -->
+          <form action="https://formsubmit.co/3766ee25e43b573ab50ef51286f0a2e6" method="post" onsubmit="location.href='thanks.html'">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-details">
+              <div>
+                <label for="name">Name:
+                  <input type="text" name="name" id="name" autocomplete="off" />
+                </label>
+              </div>
+              <div>
+                <label for="email">Email:
+                  <input type="text" name="email" id="email" />
+                </label>
+              </div>
+            </div>
+            <div>
+              <label for="email">Subject:
+                <input type="text" name="_subject" placeholder="👋🏼">
+              </label>
+            </div>
+            <div>
+              <label>Message:</label>
+              <textarea name="comments" rows="5" placeholder="Let's connect."></textarea>
+            </div>
+            <div class="form-buttons">
+              <button type="reset" name="reset" class="custom-button">Clear</button>
+              <button type="submit" name="submit" class="custom-button"> <i class="far fa-paper-plane"></i></button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </main>
+
+  <!-- <div id="back-to-top"
+     data-aos="fade-in"
+     data-aos-duration="1000"
+     data-aos-anchor=".projects"
+     data-aos-anchor-placement="top-bottom">
+     <i class="fas fa-chevron-up bigger-icon"></i>
+  </div> -->
 
   <footer>
     &#169; Hannah, 2021

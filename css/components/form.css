@@ -1,0 +1,22 @@
+form, input, textarea {
+  width: 100%;
+}
+
+input, textarea {
+  border: 3px solid lightblue;
+  line-height: 30px;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-details {
+  display: flex;
+  gap: 20px;
+}
