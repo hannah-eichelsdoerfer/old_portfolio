@@ -11,6 +11,10 @@ input {
   margin-bottom: 15px;
 }
 
+input::placeholder, textarea::placeholder {
+  padding-left: 10px;
+}
+
 input:focus-visible {
   border: 3px solid red;
 }

@@ -63,7 +63,6 @@ a:hover {
 }
 
 .projects {
-  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 3rem 1rem;
@@ -74,6 +73,10 @@ a:hover {
 }
 
 @media (max-width: 760px) {
+  #about, #projects, #contact {
+    margin-bottom: 25px;
+  }
+
   #about-description {
     display: none;
   }
@@ -95,7 +98,6 @@ a:hover {
   
   #about-me :nth-child(1) { order: 2; }
   #about-me :nth-child(2) { order: 1; }
-
 }
 
 #skills-container {
@@ -151,6 +153,7 @@ a:hover {
   }
 
   .projects {
+    margin-top: 50px;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
