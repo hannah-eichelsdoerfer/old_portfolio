@@ -54,6 +54,15 @@
   transition: 0.5s;
 }
 
+.custom-button-blue {
+  color: white;
+  background-color: lightblue;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 10px 0;
+  border: 0;
+}
+
 .bigger-icon {
   font-size: 1.5rem;
 }

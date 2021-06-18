@@ -72,13 +72,15 @@
         <div class="project-card">
           <img src="images/localshopper.jpg" alt="">
           <div class="project-card-content">
-            <h4>Localshopper</h4>
+            <div>
+              <h4>Localshopper</h4>
+              <p><small>Ruby on Rails | JavaScript | SCSS | PostgreSQL</small></p>
+            </div>
             <div class="project-card-links">
               <a href="https://github.com/hannah-eichelsdoerfer/local_shopper" target="blank"><i class="fab fa-github"></i></a>
               <a href="https://www.localshopper.me/" target="blank"><i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
-          <p><small>Ruby on Rails | JavaScript | SCSS | PostgreSQL</small></p>
         </div>
         <div class="project-card">
           <img src="images/camperworld.jpg" alt="">
@@ -93,7 +95,7 @@
         </div>
       </div>
       <div id="see-more-projects">
-        <button class="custom-button"><span style="display: none">See more projects</span><i class="fas fa-arrow-right"></i></button>
+        <a href="" class="custom-button"><span>See more</span><i class="fas fa-arrow-right" style="display: none"></i></a>
       </div>
     </div>
 
@@ -102,14 +104,15 @@
       <div id="about-picture-description">
         <p id="about-description" data-aos="fade-right" data-aos-duration="2000">
           I am a self-taught, as well as bootcamp graduate,
-          full-stack web developer, eager to keep on learning. 
+          full-stack developer, eager to keep on learning. 
           I am passionate about creating innovative solutions aiming for smooth user 
-          experiences while keeping a high functionality.
-          I am interested in remote as well as freelance work.
-          #cleancode #elegantcode #efficiantcode
-          #responsivedesign
-          #attentiontodetail
+          experiences while keeping a high functionality and paying attention to details.
+          I love organization and structure and therefore put an emphasis on clean, elegant and efficient code with
+          a mobile-first approach to ensure responsive design.
+          <small><a href="/about.html">Read More</a></small>
+          <!-- Interested in remote as well as freelance work. -->
         </p>
+
         <img data-aos="fade-left" data-aos-duration="2000" class="profile-picture" src="images/hannah_eichelsdoerfer.jpg" alt="Portrait shot of Hannah Eichelsdoerfer">
       </div>
       <div id="about-me">
@@ -151,46 +154,45 @@
     <div class="contact-container" data-aos="fade-up" data-aos-duration="2000">
       <div>
         <p>Wheter you are interested in starting a project together, looking for a junior developer to join your team, need a website, want to know more about me or simply want to conntect - feel free to reach out:</p>
-        <div class="contact-actions">
-          <!-- <div>
+        <!-- <div class="contact-actions">
+           <div>
             <a class="custom-button" href="mailto:hannaheichelsdoerfer@gmail.com?subject=Getting in Touch"><i class="fas fa-envelope"></i> hannaheichelsdoerfer@gmail.com</a>
             <p><a href="mailto:hannaheichelsdoerfer@gmail.com?subject=Let's connect 👋🏻" class="custom-button"><i class="fas fa-envelope"></i> Email me</a></p>
-          </div> -->
-          <!-- <div>
+          </div>
+          <div>
             <h3><i class="fas fa-phone-alt"></i></h3>
             <h3><a href="tel:+43-664-2380824">+43 664 2380824</a></h3>
             <p><a href="tel:+43-664-2380824" class="custom-button">Call me</a></p>
-          </div> -->
-          <form action="https://formsubmit.co/3766ee25e43b573ab50ef51286f0a2e6" method="post" onsubmit="location.href='thanks.html'">
-            <input type="hidden" name="_captcha" value="false">
+          </div>
+        </div>  -->
+        <form action="https://formsubmit.co/3766ee25e43b573ab50ef51286f0a2e6" method="post" onsubmit="location.href='thanks.html'">
+          <input type="hidden" name="_captcha" value="false">
 
-            <div class="form-details">
-              <div>
-                <label for="name">Name
-                  <input type="text" name="name" id="name" autocomplete="off" />
-                </label>
-              </div>
-              <div>
-                <label for="email">Email
-                  <input type="text" name="email" id="email" />
-                </label>
-              </div>
-            </div>
-            <div>
-              <label for="email">Subject
-                <input type="text" name="_subject" placeholder="👋🏼">
+          <div class="form-details">
+            <div class="form-half">
+              <label for="name">
+                <input type="text" name="name" id="name" autocomplete="off" placeholder="Name"/>
               </label>
             </div>
-            <div>
-              <label>Message</label>
-              <textarea name="comments" rows="5" placeholder="Let's connect."></textarea>
+            <div class="form-half">
+              <label for="email">
+                <input type="text" name="email" id="email" placeholder="Email" />
+              </label>
             </div>
-            <div class="form-buttons">
-              <button type="reset" name="reset" class="custom-button">Clear</button>
-              <button type="submit" name="submit" class="custom-button"> <i class="far fa-paper-plane"></i></button>
-            </div>
-          </form>
-        </div>
+          </div>
+          <div>
+            <label for="_subject">
+              <input type="text" name="_subject" placeholder="Subject">
+            </label>
+          </div>
+          <div>
+            <textarea name="comments" rows="5" placeholder="Let's connect."></textarea>
+          </div>
+          <div class="form-buttons">
+            <!-- <button type="reset" name="reset" class="custom-button">Clear</button> -->
+            <button type="submit" name="submit" class="custom-button-blue">Send Email <i class="far fa-paper-plane"></i></button>
+          </div>
+        </form>
       </div>
     </div>
   </main>
