@@ -73,6 +73,7 @@
   }
   #see-more-projects {
     text-align: right;
+    grid-column: span 2
   }
 }
 

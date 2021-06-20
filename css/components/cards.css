@@ -9,8 +9,8 @@
   transform: scale(1.01);
 }
 
-.project-card h4 {
-  margin-bottom: 0;
+.project-card h4, .project-card p {
+  margin: 0;
 }
 
 .project-card img, .project-card video {
@@ -20,8 +20,8 @@
 .project-card-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+  align-items: flex-start;
+  padding: 10px 20px;
 }
 
 .project-card-links a {

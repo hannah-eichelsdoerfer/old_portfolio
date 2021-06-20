@@ -30,6 +30,10 @@ main {
   margin: 0 auto;
 }
 
+header {
+  height: calc(100vh - 150px);
+}
+
 header h1 {
   font-size: 4rem;
 }
@@ -203,7 +207,7 @@ a:hover {
   }
 
   .call-to-action {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .contact-container {
@@ -224,3 +228,9 @@ a:hover {
   text-align: center;
   gap: 50px;
 } */
+
+@media (min-width: 1536px) {
+  header, .projects-container, .about-container, .skills-container {
+    height: auto;
+  }
+}
