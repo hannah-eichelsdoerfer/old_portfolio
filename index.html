@@ -50,17 +50,6 @@
     <header>
       <h1> Hi, I'm Hannah 👋🏼 </h1>
       <p><span id="typing"></span></p>
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <script>
-        header = document.querySelector("#typing");
-        console.log(header)
-        var typed = new Typed(header, {
-          strings: ['Full-stack Developer', 'Front-end', 'Back-end', 'Problem-Solver', 'Creative Solutions', 'Enthusiastic Learner'],
-          loop: true,
-          typeSpeed: 80
-        });
-      </script>
-
       <div class="social-links">
         <a href="https://www.linkedin.com/in/hannah-eichelsdoerfer/" target="blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/hannah-eichelsdoerfer" target="blank"><i class="fab fa-github"></i></a>
@@ -179,12 +168,13 @@
         <!-- <form action="sendemail.php" method="post"> -->
         <form action="https://formsubmit.co/3766ee25e43b573ab50ef51286f0a2e6" method="post">
           <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
           <input type="hidden" name="_next" value="http://hannaheich.com/thanks.html">
 
           <div class="form-details">
             <div class="form-half">
               <label for="name">
-                <input required type="text" name="name" id="name" autocomplete="off" placeholder="Name"/>
+                <input type="text" name="name" id="name" autocomplete="off" placeholder="Name"/>
               </label>
             </div>
             <div class="form-half">
@@ -195,7 +185,7 @@
           </div>
           <div>
             <label for="subject">
-              <input required name="subject" type="text" id="subject" placeholder="Subject">
+              <input name="subject" type="text" id="subject" placeholder="Subject">
             </label>
           </div>
           <div>
@@ -223,13 +213,7 @@
   </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>AOS.init({
-    disable: function() {
-      var maxWidth = 760;
-      return window.innerWidth < maxWidth;
-    }
-  });</script>
-  <!-- <script src="js/components/theme-toggler.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

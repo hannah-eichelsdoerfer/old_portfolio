@@ -234,3 +234,9 @@ a:hover {
     height: auto;
   }
 } */
+
+#thanks-container {
+  height: calc(100vh - 115px);
+  display: flex;
+  align-items: center;
+}

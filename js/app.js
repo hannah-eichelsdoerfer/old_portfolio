@@ -21,24 +21,18 @@ dropdown.addEventListener('click', (event) => {
   }
 });
 
+AOS.init({
+  disable: function() {
+    var maxWidth = 760;
+    return window.innerWidth < maxWidth;
+  }
+});
 
-// PROJECT CARDS
-// let projectDescription = document.createElement("p");
+header = document.querySelector("#typing");
 
-// let replace = document.createElement("div")
-
-// const projectCards = document.querySelectorAll('.project-card');
-// projectCards.forEach((projectCard) => {
-//   projectCard.addEventListener("mouseover", (element) => {
-//     element.currentTarget.classList.add("bg-light");
-//     let image = element.querySelector("img");
-//     image.replaceWith(replace);
-//   });
-// });
-
-// projectCards.forEach((projectCard) => {
-//   projectCard.addEventListener("mouseout", (element) => {
-//     element.currentTarget.classList.remove("bg-light");
-//   });
-// });
+let typed = new Typed(header, {
+  strings: ['Full-stack Developer', 'Front-end', 'Back-end', 'Problem-Solver', 'Creative Solutions', 'Enthusiastic Learner'],
+  loop: true,
+  typeSpeed: 80
+});
 

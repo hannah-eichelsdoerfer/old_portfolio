@@ -23,6 +23,10 @@ input:focus-visible {
 }
 
 @media (min-width: 760px) {
+  form {
+    margin-top: 50px;
+  }
+  
   .form-details {
     display: flex;
     gap: 20px;
