@@ -240,3 +240,7 @@ a:hover {
   display: flex;
   align-items: center;
 }
+
+#skills-container p:hover {
+  transform: scale(1.02);
+}
