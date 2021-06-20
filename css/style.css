@@ -229,8 +229,8 @@ a:hover {
   gap: 50px;
 } */
 
-@media (min-width: 1920px) {
+/* @media (min-width: 1920px) {
   header, .projects-container, .about-container, .skills-container {
     height: auto;
   }
-}
+} */
