@@ -1,13 +1,3 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
-
-/* Components */
-@import "components/navbar.css";
-@import "components/footer.css";
-@import "components/buttons.css";
-@import "components/cards.css";
-@import "components/form.css";
-
 /* Universal Styles for all pages */
 
 * {
@@ -235,7 +225,7 @@ a:hover {
   }
 } */
 
-#thanks-container {
+#thanks-container, #more-about {
   height: calc(100vh - 115px);
   display: flex;
   align-items: center;

@@ -10,10 +10,16 @@
   <title>Hannah Eich</title>
   <link rel="shortcut icon" href="images/code.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components/buttons.css">
+  <link rel="stylesheet" href="css/components/cards.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/components/form.css">
+  <link rel="stylesheet" href="css/components/navbar.css">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
   <nav>
@@ -21,17 +27,11 @@
       <div class="logo">
         <a href=""><i class="fas fa-code"></i> <strong>HANNAH EICH</strong> </a>
       </div>
+
       <button class="hamburger">
         <i class="fas fa-bars"></i>
       </button>
-      <!-- <div id="theme-toggler">
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
-          <i class="fas fa-sun"></i>
-          <i class="fas fa-moon"></i>
-          <div class="ball"></div>
-        </label>
-      </div> -->
+
       <div id="navbar-links">
         <div class="navbar-link">
           <a href="#projects">Projects</a>
@@ -113,7 +113,7 @@
           <!-- Interested in remote as well as freelance work. -->
         </p>
 
-        <img data-aos="fade-left" data-aos-duration="2000" class="profile-picture" src="images/hannah_eichelsdoerfer.jpg" alt="Portrait shot of Hannah Eichelsdoerfer">
+        <img data-aos="fade-left" data-aos-duration="2000" width="250px" height="250px" class="profile-picture" src="images/hannah_eichelsdoerfer.jpg" alt="Portrait shot of Hannah Eichelsdoerfer">
       </div>
       <div id="about-me">
         <div id="skills-container" data-aos="fade-right" data-aos-duration="2000">
@@ -141,7 +141,6 @@
         </div>
         <div id="about-details" data-aos="fade-left" data-aos-duration="2000">
           <p><i class="fas fa-map-marker-alt"></i> Berlin, Germany</p>
-          <!-- <p>EN | GER | ES </p> -->
           <div class="call-to-action">
             <a href="resume_hannah_eichelsdoerfer.pdf" target="blank">Resume</a>
             <a href="#contact">Contact Me</a>
@@ -189,7 +188,9 @@
             </label>
           </div>
           <div>
-            <textarea required name="message" rows="5" placeholder="Let's connect."></textarea>
+            <label for="message">
+              <textarea required id="message" name="message" rows="5" placeholder="Let's connect."></textarea>
+            </label>
           </div>
           <div class="form-buttons">
             <!-- <button type="reset" name="reset" class="custom-button">Clear</button> -->
@@ -215,5 +216,6 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="js/app.js"></script>
+  <noscript>Your browser does not support JavaScript!</noscript>
 </body>
 </html>
