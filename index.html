@@ -176,9 +176,7 @@
             <p><a href="tel:+43-664-2380824" class="custom-button">Call me</a></p>
           </div>
         </div>  -->
-        <form action="sendemail.php" method="post" onsubmit="location.href='thanks.html'">
-          <input type="hidden" name="_captcha" value="false">
-
+        <form action="sendemail.php" method="post">
           <div class="form-details">
             <div class="form-half">
               <label for="name">
@@ -193,7 +191,7 @@
           </div>
           <div>
             <label for="subject">
-              <input required type="text" id="subject" placeholder="Subject">
+              <input required name="subject" type="text" id="subject" placeholder="Subject">
             </label>
           </div>
           <div>
