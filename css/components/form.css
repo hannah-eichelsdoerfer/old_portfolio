@@ -22,12 +22,16 @@ input:focus-visible {
   justify-content: flex-start;
 }
 
-.form-details {
-  display: flex;
-  gap: 50px;
+@media (min-width: 760px) {
+  .form-details {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .form-half {
+    width: 50%;
+  }
+
 }
 
-.form-half {
-  width: 50%;
-}
 

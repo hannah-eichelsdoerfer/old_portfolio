@@ -14,7 +14,13 @@ const dropdownLinks = document.querySelector("#navbar-links");
 dropdown.addEventListener('click', (event) => {
   // console.log(event);
   dropdownLinks.classList.toggle('show');
+  if (dropdownLinks.classList.contains('show')) {
+    dropdown.innerHTML = "<i class='fas fa-times'></i>";
+  } else {
+    dropdown.innerHTML = "<i class='fas fa-bars'></i>";
+  }
 });
+
 
 // PROJECT CARDS
 // let projectDescription = document.createElement("p");

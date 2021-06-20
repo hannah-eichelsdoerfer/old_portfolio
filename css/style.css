@@ -76,6 +76,10 @@ a:hover {
   margin-top: 50px;
 }
 
+.skills-container p:hover {
+  transform: scale(1.01);
+}
+
 @media (max-width: 760px) {
   #about, #projects, #contact {
     margin-bottom: 25px;
