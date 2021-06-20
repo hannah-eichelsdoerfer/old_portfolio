@@ -13,7 +13,7 @@
   margin-bottom: 0;
 }
 
-.project-card img {
+.project-card img, .project-card video {
   width: 100%;
 }
 
