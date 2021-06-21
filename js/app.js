@@ -31,8 +31,7 @@ AOS.init({
 header = document.querySelector("#typing");
 
 let typed = new Typed(header, {
-  strings: ['Full-stack Developer', 'Front-end', 'Back-end', 'Problem-Solver', 'Creative Solutions', 'Enthusiastic Learner'],
+  strings: ['Full-stack Developer', 'Front-end', 'Back-end', 'Problem-Solver', 'Creative Solutions', 'Enthusiastic Learner', 'Freelancer'],
   loop: true,
-  typeSpeed: 80
+  typeSpeed: 90
 });
-

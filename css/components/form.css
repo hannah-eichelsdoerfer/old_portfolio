@@ -35,4 +35,9 @@ input:focus-visible {
   .form-half {
     width: 50%;
   }
+
+  .form-buttons {
+    display: flex;
+    justify-content: center;
+  }
 }
