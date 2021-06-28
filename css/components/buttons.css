@@ -1,7 +1,9 @@
 @-webkit-keyframes bounce { 0%, 100% { top: 0; } 30% { top: 10px; } 50% { top: 0px; } 80% { top: 10px; } }
 @-moz-keyframes bounce { 0%, 100% { top: 0; } 30% { top: 10px; } 50% { top: 0px; } 80% { top: 10px; } }
 @keyframes bounce { 0%, 100% { top: 0; } 30% { top: 10px; } 50% { top: 0px; } 80% { top: 10px; } }
-
+button {
+  font-family: 'Poppins', sans-serif;
+}
 #bouncing-button {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -18,21 +20,6 @@
   opacity: 0.7;
   color: #333333;
   transition: 0.3s;
-}
-
-#about-details a {
-  border: 1px solid lightblue;
-  color: lightblue;
-  background-color: transparent;
-  padding: 5px 15px;
-  border-radius: 15px;
-  display: block;
-  margin: 10px 0;
-}
-
-#about-details a:hover {
-  border: 1px solid goldenrod;
-  transition: ease-in;
 }
 
 .custom-button {

@@ -210,6 +210,7 @@ a:hover {
 
   .call-to-action {
     margin-top: 10px;
+    align-self: stretch;
   }
 
   .contact-container {
