@@ -20,16 +20,13 @@ main {
   margin: 0 auto;
 }
 
-header {
-  height: calc(100vh - 150px);
-}
-
 header h1 {
   font-size: 4rem;
 }
 
 h2 {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 a {
@@ -110,6 +107,10 @@ a:hover {
 }
 
 @media (min-width: 760px) {
+  .section { height: 100vh;}
+  .section:first-child { height: calc(100vh - 75px); }
+  .section:last-child { height: calc(100vh - 50px); }
+
   #skills-container {
     flex: 1;
     display: flex;
@@ -163,18 +164,10 @@ a:hover {
     /* scroll-snap-align: start; */
   }
 
-  .projects-container {
-    height: calc(100vh - 200px);
-  }
-
   .projects {
     margin-top: 50px;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
-  }
-
-  .about-container {
-    height: calc(100vh - 150px);
   }
   
   #about-picture-description {
@@ -214,14 +207,13 @@ a:hover {
   }
 
   .contact-container {
-    height: calc(100vh - 190px);
     text-align: left;
     padding: 0 44px;
     display: flex;
     align-items: flex-start;
     justify-content: start;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 50px;
   }
 }
 
