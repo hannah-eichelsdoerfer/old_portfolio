@@ -44,14 +44,25 @@ let typed = new Typed(header, {
   typeSpeed: 90,
 });
 
+
+// Cards Modal Popup
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
-const closingModal = document.querySelector(".close-modal");
-const openingModal = document.querySelector(".open-modal");
-
+const closeBtn = document.querySelector(".close-modal");
 const projectCards = document.querySelectorAll(".project-card");
+
+const openModal = () => {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+}
+const closeModal = () => {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+}
+
 projectCards.forEach(card => {
-  card.addEventListener("click", () => {
-    // console.log(card);
-  })
+  card.addEventListener("click", openModal);
 });
+
+closeBtn.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
