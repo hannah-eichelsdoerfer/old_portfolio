@@ -46,23 +46,36 @@ let typed = new Typed(header, {
 
 
 // Cards Modal Popup
-const modal = document.querySelector(".modal");
+const modals = document.querySelectorAll(".modal");
 const overlay = document.querySelector(".overlay");
-const closeBtn = document.querySelector(".close-modal");
+const closeBtns = document.querySelectorAll(".close-modal");
 const projectCards = document.querySelectorAll(".project-card");
 
-const openModal = () => {
-  modal.classList.remove("hidden");
+const openModal = (modal) => {
+  // modal.classList.remove("hidden");
+  // overlay.classList.remove("hidden");
+  const data = document.getElementById(`${modal}Modal`);
+  data.classList.remove("hidden");
   overlay.classList.remove("hidden");
 }
-const closeModal = () => {
-  modal.classList.add("hidden");
+
+const closeModal = (target) => {
+  target.classList.add("hidden");
   overlay.classList.add("hidden");
 }
 
 projectCards.forEach(card => {
-  card.addEventListener("click", openModal);
+  card.addEventListener("click", (event) => {
+    openModal(event.currentTarget.id);
+  });
 });
 
-closeBtn.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
+closeBtns.forEach (closeBtn => {
+  closeBtn.addEventListener("click", (event) => {
+    closeModal(event.currentTarget.parentNode);
+  });
+  
+})
+overlay.addEventListener("click", (event) => {
+  modals.forEach ((modal) => {closeModal(modal)});
+});
