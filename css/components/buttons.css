@@ -72,5 +72,25 @@ button {
   color: #33333386;
 }
 
+.close-modal {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
 
+.close-modal:hover {
+  color: lightblue;
+}
 
+@media (min-width: 760px) {
+  .close-modal {
+    top: 10px;
+    right: 30px;
+    font-size: 3rem;
+  }
+}

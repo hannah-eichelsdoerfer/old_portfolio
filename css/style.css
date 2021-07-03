@@ -79,17 +79,6 @@ a:hover {
 }
 
 /* Card Modals on click */
-.close-modal {
-  position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 3rem;
-  color: #333;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
 .hidden {
   display: none;
 }
@@ -102,7 +91,7 @@ a:hover {
   width: 90%;
   height: 90%;
   background-color: white;
-  padding: 4rem 6rem;
+  padding: 4rem 1rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -151,10 +140,6 @@ a:hover {
 }
 
 @media (min-width: 760px) {
-  .section { height: 100vh;}
-  .section:first-child { height: calc(100vh - 75px); }
-  .section:last-child { height: calc(100vh - 50px); }
-
   #skills-container {
     flex: 1;
     display: flex;
@@ -168,6 +153,10 @@ a:hover {
     transform: scale(1.02);
   }
 
+  .modal {
+    padding: 4rem 6rem;
+  }
+
   #thanks-container, #more-about {
     height: calc(100vh - 115px);
     display: flex;
@@ -176,6 +165,9 @@ a:hover {
 }
 
 @media (min-width: 1200px) {
+  .section { height: 100vh;}
+  .section:first-child { height: calc(100vh - 75px); }
+  .section:last-child { height: calc(100vh - 50px); }
   /* html, body {
     scroll-snap-type: y mandatory;
     scroll-padding: 20px;
@@ -273,4 +265,3 @@ a:hover {
     height: auto;
   }
 } */
-
