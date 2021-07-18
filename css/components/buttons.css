@@ -52,7 +52,6 @@ button {
 
 .pill-button {
   font-size: 10px;
-  background-color: #47493B;
   width: 90px;
   border: none;
   padding: 5px 10px;
@@ -61,6 +60,14 @@ button {
   display: inline-block;
   border-radius: 16px;
   color: white;
+}
+
+#camperworldModal .pill-button {
+  background-color: #47493B;
+}
+
+#localshopperModal .pill-button {
+  background-color: #8993D1;
 }
 
 @media (min-width: 760px) {

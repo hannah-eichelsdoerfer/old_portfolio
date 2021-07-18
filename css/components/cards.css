@@ -27,5 +27,8 @@
 
 .project-card-links a {
   margin-left: 10px;
+}
+
+.project-card-links i {
   font-size: 20px;
 }

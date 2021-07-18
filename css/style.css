@@ -234,3 +234,15 @@ a:hover {
     height: auto;
   }
 } */
+
+.construction {
+  position: absolute;
+  background-color: lightblue;
+  transform: rotate(30deg) scale(3.5);
+  top: 50%;
+  left: 40%;
+  z-index: 100;
+  color: white;
+  padding: 2px 20px;
+  box-shadow: 2px 4px 10px rgb(0 0 0 / 8%);
+}
