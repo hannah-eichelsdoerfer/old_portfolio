@@ -59,11 +59,13 @@ const openModal = (modal) => {
   const data = document.getElementById(`${modal}Modal`);
   data.classList.remove("hidden");
   overlay.classList.remove("hidden");
+  document.querySelector("body").style.overflow = 'hidden';
 };
 
 const closeModal = () => {
   modals.forEach ((modal) => {if (!modal.classList.contains("hidden")) modal.classList.add("hidden")});
   overlay.classList.add("hidden");
+  document.querySelector("body").style.overflow = 'visible';
 };
 
 // const closeModal = (target) => {
