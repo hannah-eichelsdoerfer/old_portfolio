@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/components/footer.css">
   <link rel="stylesheet" href="css/components/form.css">
   <link rel="stylesheet" href="css/components/navbar.css">
+  <link rel="stylesheet" href="css/components/modal.css">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -104,7 +105,7 @@
     <div class="modal hidden" id="localshopperModal">
       <button class="close-modal">&times;</button>
       <h1>Localshopper</h1>
-      <p>Ruby on Rails | JavaScript | SCSS | PostgreSQL</p>
+      <p>Ruby on Rails | JavaScript | Bootstrap | SCSS | PostgreSQL</p>
       <p>Developed in a team of 4 in two weeks.</p>
       <a href="https://github.com/hannah-eichelsdoerfer/rails-camperworld" target="blank">View on Github <i class="fab fa-github"></i></a>
       <a href="https://camperworld.herokuapp.com/" target="blank">View live <i class="fas fa-external-link-alt"></i></a>
@@ -113,11 +114,50 @@
     <div class="modal hidden" id="camperworldModal">
       <button class="close-modal">&times;</button>
       <h1>Camperworld</h1>
-      <p>Ruby on Rails | JavaScript | SCSS | PostgreSQL</p>
-      <p>Developed in a team of 4 in one week.</p>
+      <p>
+        <span class="pill-button">Ruby on Rails</span> | 
+        <span class="pill-button">JavaScript</span> | 
+        <span class="pill-button">Bootstrap</span> | 
+        <span class="pill-button">SCSS</span> | 
+        <span class="pill-button">PostgreSQL</span>
+      </p>
+      <p>Developed in a team of 4 in one week (unfinished).</p>
       <div class="project-card-links">
         <a href="https://github.com/hannah-eichelsdoerfer/rails-camperworld" target="blank"><i class="fab fa-github"></i></a>
         <a href="https://camperworld.herokuapp.com/" target="blank"><i class="fas fa-external-link-alt"></i></a>
+      </div>
+      <div class="modal-content">
+        <div>
+         
+          <img src="images/camperworld/landing-page.png" alt="">
+        </div>
+        <div>
+          <img src="images/camperworld/all-listings.png" alt="">
+          <p>All available Listings</p>
+        </div>
+        <div>
+          <p>Reservations Overview</p>
+          <img src="images/camperworld/reservations.png" alt="">
+        </div>
+        <div>
+          <img src="images/camperworld/listings.png" alt="">
+          <p>Listings Overview</p>
+        </div>
+        <div>
+          <p>Search per City</p>
+          <img src="images/camperworld/search.png" alt="">
+        </div>
+        <div>
+          <img src="images/camperworld/map.png" alt="">
+          <p>Map Display</p>
+        </div>
+        <div>
+          <div>
+            <p>Authentication and Authorization</p>
+            <p>(Devise and Pundit)</p>
+          </div>
+          <img src="images/camperworld/login.png" alt="">
+        </div>
       </div>
     </div>
 

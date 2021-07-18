@@ -50,6 +50,19 @@ button {
   font-size: 1.5rem;
 }
 
+.pill-button {
+  font-size: 10px;
+  background-color: #47493B;
+  width: 90px;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 16px;
+  color: white;
+}
+
 @media (min-width: 760px) {
   #bouncing-button { 
     margin-top: 5rem;

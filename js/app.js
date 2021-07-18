@@ -1,12 +1,14 @@
+// Smooth nav link transition
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+  anchor.addEventListener("click", function (event) {
+    event.preventDefault();
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth",
     });
   });
 });
 
+// Dropdown Menu Mobile
 const dropdown = document.querySelector(".hamburger");
 const dropdownLinks = document.querySelector("#navbar-links");
 // console.log(dropdownLinks);
@@ -21,6 +23,7 @@ dropdown.addEventListener("click", (event) => {
   }
 });
 
+// Animate on Scroll
 AOS.init({
   disable: function () {
     var maxWidth = 760;
@@ -28,6 +31,7 @@ AOS.init({
   },
 });
 
+// Typed.js
 header = document.querySelector("#typing");
 
 let typed = new Typed(header, {
@@ -79,7 +83,5 @@ closeBtns.forEach((closeBtn) => {
 overlay.addEventListener("click", closeModal);
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    closeModal();
-  }
+  if (event.key === "Escape") closeModal(); // event.key === "Escape" && closeModal();
 });
