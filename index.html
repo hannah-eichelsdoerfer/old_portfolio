@@ -10,6 +10,7 @@
   <title>Hannah Eich</title>
   <link rel="shortcut icon" href="images/code.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dark-style.css">
   <link rel="stylesheet" href="css/components/buttons.css">
   <link rel="stylesheet" href="css/components/cards.css">
   <link rel="stylesheet" href="css/components/footer.css">
@@ -43,14 +44,26 @@
         <div class="navbar-link">
           <a href="#contact">Contact</a>
         </div>
+        <div id="theme-toggler">
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <div class="sun-icon">
+              <i class="fas fa-sun"></i>
+            </div>
+            <div class="moon-icon">
+              <i class="fas fa-moon"></i>
+            </div>
+          </label>
+        </div>
       </div>
+
     </div>
   </nav>
   
   <main>
     <div class="section"> 
       <header>
-        <h1> Hi, I'm Hannah 👋🏼 </h1>
+        <h1> Hi, I'm Hannah <span id="wave-emoji">👋🏼</span></h1>
         <p><span id="typing"></span></p>
         <div class="social-links">
           <a href="https://www.linkedin.com/in/hannah-eichelsdoerfer/" target="blank"><i class="fab fa-linkedin"></i></a>

@@ -23,6 +23,50 @@ dropdown.addEventListener("click", (event) => {
   }
 });
 
+// Dark Mode Toggle
+let theme = localStorage.getItem("darkMode");
+const body = document.querySelector('body');
+const themeToggle = document.querySelector("label");
+const sun = document.querySelector(".sun-icon");
+const moon = document.querySelector(".moon-icon");
+const wave = document.querySelector("#wave-emoji");
+
+// Default: 
+sun.classList.add("hidden");
+
+const toggleDarkMode = () => {
+  document.querySelectorAll(".custom-button").forEach((btn) => {
+    console.log(btn);
+    btn.classList.toggle('custom-button');
+    btn.classList.toggle('btn-dark');
+  })
+  
+  body.classList.toggle('bg-dark');
+  wave.classList.toggle('hidden');
+  moon.classList.toggle("hidden");
+  sun.classList.toggle("hidden");
+};
+
+themeToggle.addEventListener("click", () => {
+  theme = localStorage.getItem("darkMode");
+
+  if (theme !== "dark") {
+    toggleDarkMode();
+    theme = localStorage.setItem("darkMode", "dark");
+    // console.log(theme);
+  } else {
+    toggleDarkMode();
+    theme = localStorage.setItem('darkMode', null);
+    // console.log(theme);
+  }
+});
+
+// Check dark mode is on or off on page reload
+if(theme === 'dark') {
+  toggleDarkMode();
+  sun.classList.remove("hidden");
+};
+
 // Animate on Scroll
 AOS.init({
   disable: function () {

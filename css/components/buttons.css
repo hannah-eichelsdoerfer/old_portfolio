@@ -107,6 +107,35 @@ button {
   color: lightblue;
 }
 
+/* Theme Toggler */
+.checkbox {
+  opacity: 0;
+  left:0;
+  top:0;
+  z-index:5;
+  display: none;
+}
+
+.label {
+  cursor: pointer;
+	transform: scale(1.2);
+}
+
+#theme-toggler {
+  padding: 0;
+  padding-left: 10px;
+  margin: 0;
+  font-size: 23px;
+}
+
+.fa-moon {
+  color: lightblue;
+}
+
+.fa-sun {
+  color: #e7e3a9;
+}
+
 @media (min-width: 760px) {
   .close-modal {
     top: 10px;

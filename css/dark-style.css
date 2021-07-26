@@ -1,0 +1,10 @@
+/* DARK MODE SETTINGS */
+.bg-dark {
+  background-color: #101010;
+  color: white;
+}
+
+.btn-dark {
+	background-color: white;
+	color: #101010;
+}
