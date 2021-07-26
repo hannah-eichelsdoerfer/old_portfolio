@@ -4,6 +4,8 @@
   transition: 0.5s;
   text-align: left;
   cursor: pointer;
+  background-color: #FFFFFF;
+  color: #333333;
 }
 
 .project-card:hover {

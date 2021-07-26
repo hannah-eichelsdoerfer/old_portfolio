@@ -4,7 +4,7 @@ footer {
   /* position: fixed;
   bottom: 0; */
   width: 100%;
-  background-color: white;
+  background-color: inherit;
   font-size: 12px;
   line-height: 50px;
 }

@@ -1,7 +1,7 @@
 #navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 5%;
   flex-wrap: wrap;
 }
 
@@ -30,6 +30,10 @@
 }
 
 @media (min-width: 760px) {
+  #navbar {
+    padding: 20px 20px;
+  }
+  
   #navbar-links {
     display: flex;
     flex-direction: row;
