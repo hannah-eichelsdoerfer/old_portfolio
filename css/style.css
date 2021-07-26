@@ -147,6 +147,12 @@ a:hover {
     top: 40%;
     left: 1%;
   }
+
+  /* #theme-toggler {
+    position:fixed;
+    bottom: 45%;
+    right: 1%;
+  } */
   
   .social-links a {
     font-size: 1.3rem;
