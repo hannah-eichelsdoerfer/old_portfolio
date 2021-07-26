@@ -1,10 +1,10 @@
 /* DARK MODE SETTINGS */
 .bg-dark {
   background-color: #101010;
-  color: white;
+  color: rgba(255, 255, 255, 0.863);
 }
 
-.btn-dark {
+/* .btn-dark {
 	background-color: white;
 	color: #101010;
-}
+} */

@@ -118,22 +118,19 @@ button {
 
 .label {
   cursor: pointer;
-	transform: scale(1.2);
-}
-
-#theme-toggler {
-  padding: 0;
-  padding-left: 10px;
-  margin: 0;
-  font-size: 23px;
 }
 
 .fa-moon {
-  color: lightblue;
+  /* color: lightblue; */
+  color: rgb(170, 170, 170);
+  transform: scale(1.1);
+  margin: 0px 10px 0px 20px;
 }
 
 .fa-sun {
-  color: #e7e3a9;
+  transform: scale(1.1);
+  color: #f0d435;
+  margin: 0px 10px 0px 20px;
 }
 
 @media (min-width: 760px) {

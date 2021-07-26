@@ -34,13 +34,7 @@ const wave = document.querySelector("#wave-emoji");
 // Default: 
 sun.classList.add("hidden");
 
-const toggleDarkMode = () => {
-  document.querySelectorAll(".custom-button").forEach((btn) => {
-    console.log(btn);
-    btn.classList.toggle('custom-button');
-    btn.classList.toggle('btn-dark');
-  })
-  
+const toggleDarkMode = () => { 
   body.classList.toggle('bg-dark');
   wave.classList.toggle('hidden');
   moon.classList.toggle("hidden");
