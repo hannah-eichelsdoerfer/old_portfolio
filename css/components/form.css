@@ -13,8 +13,9 @@ input::placeholder, textarea::placeholder {
   font-family: monospace;
 }
 
-input:focus-visible {
-  border: 3px solid lightcoral;
+:focus-visible {
+  outline: inherit;
+  background-color: rgba(173, 216, 230, 0.26);
 }
 
 .form-buttons {

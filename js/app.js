@@ -29,14 +29,12 @@ const body = document.querySelector('body');
 const themeToggle = document.querySelector("label");
 const sun = document.querySelector(".sun-icon");
 const moon = document.querySelector(".moon-icon");
-const wave = document.querySelector("#wave-emoji");
 
 // Default: 
 sun.classList.add("hidden");
 
 const toggleDarkMode = () => { 
   body.classList.toggle('bg-dark');
-  wave.classList.toggle('hidden');
   moon.classList.toggle("hidden");
   sun.classList.toggle("hidden");
 };
