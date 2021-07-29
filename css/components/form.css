@@ -15,7 +15,7 @@ input::placeholder, textarea::placeholder {
 
 :focus-visible {
   outline: inherit;
-  background-color: rgba(173, 216, 230, 0.26);
+  background-color: rgb(214, 228, 233);
 }
 
 .form-buttons {
