@@ -1,3 +1,5 @@
+'use strict';
+
 // Smooth nav link transition
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (event) {
