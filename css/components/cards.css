@@ -34,3 +34,7 @@
 .project-card-links i {
   font-size: 20px;
 }
+
+.projects svg {
+  height: 15px;
+}
