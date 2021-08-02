@@ -70,7 +70,7 @@ AOS.init({
 });
 
 // Typed.js
-header = document.querySelector("#typing");
+const header = document.querySelector("#typing");
 
 let typed = new Typed(header, {
   strings: [
