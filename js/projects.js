@@ -2,7 +2,7 @@
 
 import { projects } from "./data.js";
 
-const projectsContainer = document.querySelector(".projects");
+const projectsContainer = document.querySelector(".more-projects");
 
 projects.forEach(project => {
   console.log(project)

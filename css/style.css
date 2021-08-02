@@ -70,6 +70,16 @@ a:hover {
   grid-gap: 3rem 1rem;
 }
 
+.more-projects {
+  display: grid;
+  grid-template-columns:1fr;
+  grid-gap: 3rem 1rem;
+}
+
+.more-projects svg {
+  height: 15px;
+}
+
 .contact-actions {
   margin-top: 50px;
 }
@@ -109,6 +119,12 @@ a:hover {
 }
 
 @media (min-width: 760px) {
+  .projects {
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
   #skills-container {
     flex: 1;
     display: flex;
@@ -165,20 +181,15 @@ a:hover {
     padding-top: 15%;
   }
 
-  /* h1 {
-    scroll-snap-align: center;
-  } */
-
   #projects, #about, #contact {
     text-align: left;
     font-size: 3rem;
     /* scroll-snap-align: start; */
   }
 
-  .projects {
-    margin-top: 50px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+  .more-projects {
+    margin-top: 25px;
+    grid-template-columns: repeat(3, 1fr);
   }
   
   #about-picture-description {

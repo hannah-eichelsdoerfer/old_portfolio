@@ -8,6 +8,10 @@
   color: #333333;
 }
 
+#localshopper, #camperworld {
+  flex: 1;
+}
+
 .project-card:hover {
   transform: scale(1.01);
 }
@@ -35,6 +39,3 @@
   font-size: 20px;
 }
 
-.projects svg {
-  height: 15px;
-}
