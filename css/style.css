@@ -67,7 +67,6 @@ a:hover {
 .projects {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 3rem 1rem;
 }
 
 .more-projects {
@@ -121,13 +120,9 @@ a:hover {
 @media (min-width: 760px) {
   .projects {
     margin-top: 50px;
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem; */
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    width: 97%;
-    float: right;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem 1rem;
     /* width: 110%; */
   }
 
@@ -195,6 +190,18 @@ a:hover {
 
   #projects {
     margin-left: 10%;
+  }
+
+  .projects {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 97%;
+    float: right;
+  }
+
+  .project-card img, .project-card video {
+    width: 600px !important;
   }
 
   .more-projects {

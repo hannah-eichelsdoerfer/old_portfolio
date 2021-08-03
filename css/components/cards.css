@@ -22,7 +22,7 @@
 }
 
 .project-card img, .project-card video {
-  width: 600px;
+  width: 100%;
 }
 
 .project-card-content {

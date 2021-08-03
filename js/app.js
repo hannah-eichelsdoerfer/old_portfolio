@@ -151,25 +151,28 @@ if(theme === 'dark') {
 // Horizontal Scroll
 const projects = document.querySelector(".projects")
 
-projects.addEventListener('wheel', (ev) => {
-  ev.preventDefault();  // stop scrolling in another direction
-  projects.scrollLeft += (ev.deltaY + ev.deltaX);
-  // if (!ev.shiftKey) {}
-  // while (projects.scrollLeft < 1200) {
-  //   ev.preventDefault();
-  //   projects.scrollLeft += (ev.deltaY + ev.deltaX);
-  // }
-  
-  // if (projects.scrollLeft >= 1100) {
-  //   console.log("THE END");
-  // }
-});
+if (window.screen.width >= 1200) {
+  console.log("Over 1200px screen size 🎉")
+  projects.addEventListener('wheel', (ev) => {
+    ev.preventDefault();  // stop scrolling in another direction
+    projects.scrollLeft += (ev.deltaY + ev.deltaX);
+    // if (!ev.shiftKey) {}
+    // while (projects.scrollLeft < 1200) {
+    //   ev.preventDefault();
+    //   projects.scrollLeft += (ev.deltaY + ev.deltaX);
+    // }
+    
+    // if (projects.scrollLeft >= 1100) {
+    //   console.log("THE END");
+    // }
+  });
+  projects.addEventListener("DOMMouseScroll", (ev) => {
+    ev.preventDefault();  // stop scrolling in another direction
+    projects.scrollLeft += (ev.deltaY + ev.deltaX);
+  });
+}
 
 
-projects.addEventListener("DOMMouseScroll", (ev) => {
-  ev.preventDefault();  // stop scrolling in another direction
-  projects.scrollLeft += (ev.deltaY + ev.deltaX);
-});
 
 // document.addEventListener('wheel', function(e)
 // {
