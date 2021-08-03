@@ -121,8 +121,14 @@ a:hover {
 @media (min-width: 760px) {
   .projects {
     margin-top: 50px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem; */
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 97%;
+    float: right;
+    /* width: 110%; */
   }
 
   #skills-container {
@@ -185,6 +191,10 @@ a:hover {
     text-align: left;
     font-size: 3rem;
     /* scroll-snap-align: start; */
+  }
+
+  #projects {
+    margin-left: 10%;
   }
 
   .more-projects {
@@ -252,7 +262,7 @@ a:hover {
   }
 } */
 
-.construction {
+/* .construction {
   position: absolute;
   background-color: lightblue;
   transform: rotate(30deg) scale(3.5);
@@ -262,4 +272,19 @@ a:hover {
   color: white;
   padding: 2px 20px;
   box-shadow: 2px 4px 10px rgb(0 0 0 / 8%);
+} */
+
+canvas {
+  /* z-index: -100; */
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
+
+/* header {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  width: 100%;
+} */

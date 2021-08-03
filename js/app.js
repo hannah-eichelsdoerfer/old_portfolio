@@ -148,4 +148,50 @@ if(theme === 'dark') {
   sun.classList.remove("hidden");
 };
 
+// Horizontal Scroll
+const projects = document.querySelector(".projects")
+
+projects.addEventListener('wheel', (ev) => {
+  ev.preventDefault();  // stop scrolling in another direction
+  projects.scrollLeft += (ev.deltaY + ev.deltaX);
+  // if (!ev.shiftKey) {}
+  // while (projects.scrollLeft < 1200) {
+  //   ev.preventDefault();
+  //   projects.scrollLeft += (ev.deltaY + ev.deltaX);
+  // }
+  
+  // if (projects.scrollLeft >= 1100) {
+  //   console.log("THE END");
+  // }
+});
+
+
+projects.addEventListener("DOMMouseScroll", (ev) => {
+  ev.preventDefault();  // stop scrolling in another direction
+  projects.scrollLeft += (ev.deltaY + ev.deltaX);
+});
+
+// document.addEventListener('wheel', function(e)
+// {
+//   if(e.type != 'wheel')
+//   {
+//     return;
+//   }
+//   let delta = ((e.deltaY || -e.wheelDelta || e.detail) >> 10) || 1;
+//   delta = delta * (-300);
+//   document.documentElement.scrollLeft -= delta;    
+//   // safari needs also this
+//   document.body.scrollLeft -= delta;    
+//   e.preventDefault();
+// });
+
+// Particle Background
+// const particles = document.querySelector("#particles-js");
+// particles.addEventListener("click", () => {
+//   particlesJS.load('particle-div','particle-cfg.json');  
+// });
+
+particlesJS.load('particles-js', '../particles.js-master/particles.json', function() {
+  // console.log('callback - particles.js config loaded');
+});
 

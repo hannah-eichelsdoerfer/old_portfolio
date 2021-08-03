@@ -6,11 +6,12 @@
   cursor: pointer;
   background-color: #FFFFFF;
   color: #333333;
+  margin: 20px;
 }
 
-#localshopper, #camperworld {
+/* #localshopper, #camperworld {
   flex: 1;
-}
+} */
 
 .project-card:hover {
   transform: scale(1.01);
@@ -21,7 +22,7 @@
 }
 
 .project-card img, .project-card video {
-  width: 100%;
+  width: 600px;
 }
 
 .project-card-content {
