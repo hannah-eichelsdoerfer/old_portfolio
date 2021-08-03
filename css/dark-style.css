@@ -1,7 +1,36 @@
 /* DARK MODE SETTINGS */
 .bg-dark {
-  background-color: #101010;
-  color: rgba(255, 255, 255, 0.863);
+  background-color: #202021;
+  /* color: rgba(255, 255, 255, 0.863); */
+  color: #949495;
+}
+
+.bg-dark h1 {
+  color: rgb(241, 241, 241);
+}
+
+.bg-dark .social-links {
+  color: rgb(241, 241, 241);
+}
+
+.dark-card {
+  background-color: #303033 !important;
+  color: #949495 !important;
+  border-radius: 15px;
+}
+
+.dark-btn {
+  background-color: #29292B !important;
+  color: #949495 !important;
+  border: 1px solid #949495 !important;
+}
+
+.dark-btn:hover {
+  background-color: #333333 !important;
+}
+
+.dark-form {
+  border: 3px solid #949495 !important;
 }
 
 /* .btn-dark {

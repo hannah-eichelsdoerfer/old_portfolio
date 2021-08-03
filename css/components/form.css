@@ -7,6 +7,7 @@ input, textarea {
   line-height: 35px;
   margin-bottom: 15px;
   padding-left: 15px;
+  background-color: inherit;
 }
 
 input::placeholder, textarea::placeholder {

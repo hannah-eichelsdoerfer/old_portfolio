@@ -25,42 +25,6 @@ dropdown.addEventListener("click", (event) => {
   }
 });
 
-// Dark Mode Toggle
-let theme = localStorage.getItem("darkMode");
-const body = document.querySelector('body');
-const themeToggle = document.querySelector("label");
-const sun = document.querySelector(".sun-icon");
-const moon = document.querySelector(".moon-icon");
-
-// Default: 
-sun.classList.add("hidden");
-
-const toggleDarkMode = () => { 
-  body.classList.toggle('bg-dark');
-  moon.classList.toggle("hidden");
-  sun.classList.toggle("hidden");
-};
-
-themeToggle.addEventListener("click", () => {
-  theme = localStorage.getItem("darkMode");
-
-  if (theme !== "dark") {
-    toggleDarkMode();
-    theme = localStorage.setItem("darkMode", "dark");
-    // console.log(theme);
-  } else {
-    toggleDarkMode();
-    theme = localStorage.setItem('darkMode', null);
-    // console.log(theme);
-  }
-});
-
-// Check dark mode is on or off on page reload
-if(theme === 'dark') {
-  toggleDarkMode();
-  sun.classList.remove("hidden");
-};
-
 // Animate on Scroll
 AOS.init({
   disable: function () {
@@ -125,3 +89,63 @@ overlay.addEventListener("click", closeModal);
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeModal(); // event.key === "Escape" && closeModal();
 });
+
+// Dark Mode Toggle
+let theme = localStorage.getItem("darkMode");
+const body = document.querySelector('body');
+const themeToggle = document.querySelector("label");
+const sun = document.querySelector(".sun-icon");
+const moon = document.querySelector(".moon-icon");
+
+// More Dark Mode
+const customButtons = document.querySelectorAll(".custom-button");
+const inputs = document.querySelectorAll("input");
+const textarea = document.querySelector("textarea");
+
+const darkThings = function() {
+  projectCards.forEach(card => {
+    card.classList.toggle("dark-card");
+  });
+  customButtons.forEach(button => {
+    button.classList.toggle("dark-btn")
+  });
+  inputs.forEach(input => {
+    input.classList.toggle("dark-form")
+  });
+  textarea.classList.toggle("dark-form");
+  modals.forEach(modal => {
+    modal.classList.toggle("dark-card");
+  })
+};
+
+// Default: 
+sun.classList.add("hidden");
+
+const toggleDarkMode = () => { 
+  body.classList.toggle('bg-dark');
+  moon.classList.toggle("hidden");
+  sun.classList.toggle("hidden");
+  darkThings();
+};
+
+themeToggle.addEventListener("click", () => {
+  theme = localStorage.getItem("darkMode");
+
+  if (theme !== "dark") {
+    toggleDarkMode();
+    theme = localStorage.setItem("darkMode", "dark");
+    // console.log(theme);
+  } else {
+    toggleDarkMode();
+    theme = localStorage.setItem('darkMode', null);
+    // console.log(theme);
+  }
+});
+
+// Check dark mode is on or off on page reload
+if(theme === 'dark') {
+  toggleDarkMode();
+  sun.classList.remove("hidden");
+};
+
+
