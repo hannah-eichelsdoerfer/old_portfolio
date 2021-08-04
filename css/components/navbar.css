@@ -5,6 +5,10 @@
   flex-wrap: wrap;
 }
 
+.logo {
+  z-index: 10;
+}
+
 #navbar-links {
   display: none;
   z-index: 100;
