@@ -127,11 +127,6 @@ const textarea = document.querySelector("textarea");
 const darkThings = function() {
   projectCards.forEach(card => {
     card.classList.toggle("dark-card");
-    const cardImage = card.querySelector("img");
-    const idAttribute = card.getAttribute("id");
-    const test = indexProjects.find((element) => element.title === `${idAttribute}`);
-    // cardImage.src.replace(/.*(?=images)/, "") === test.imgLight ? cardImage.src = test.imgLight : cardImage.src = test.imgDark;
-    theme === 'dark' ? cardImage.src = test.imgLight : cardImage.src = test.imgDark;
   });
   customButtons.forEach(button => {
     button.classList.toggle("dark-btn")
@@ -158,31 +153,27 @@ const toggleDarkMode = () => {
 themeToggle.addEventListener("click", () => {
   theme = localStorage.getItem("darkMode");
 
+  projectCards.forEach(card => {
+    const cardImage = card.querySelector("img");
+    const idAttribute = card.getAttribute("id");
+    const test = indexProjects.find((element) => element.title === `${idAttribute}`);
+    // cardImage.src.replace(/.*(?=images)/, "") === test.imgLight ? cardImage.src = test.imgLight : cardImage.src = test.imgDark;
+    theme === 'dark' ? cardImage.src = test.imgLight : cardImage.src = test.imgDark;
+  });
+
   if (theme !== "dark") {
     toggleDarkMode();
-    // projectCards.forEach(card => {
-    //   const cardImage = card.querySelector("img");
-    //   const idAttribute = card.getAttribute("id");
-    //   const test = indexProjects.find((element) => element.title === `${idAttribute}`);
-    //   cardImage.src = test.imgDark;
-    // });
     theme = localStorage.setItem("darkMode", "dark");
     // console.log(theme);
   } else {
     toggleDarkMode();
-    // projectCards.forEach(card => {
-    //   const cardImage = card.querySelector("img");
-    //   const idAttribute = card.getAttribute("id");
-    //   const test = indexProjects.find((element) => element.title === `${idAttribute}`);
-    //   cardImage.src = test.imgLight;
-    // });
     theme = localStorage.setItem('darkMode', null);
     // console.log(theme);
   }
 });
 
 // Check dark mode is on or off on page reload
-if(theme === 'dark') {
+if (theme === 'dark') {
   toggleDarkMode();
   sun.classList.remove("hidden");
 };
