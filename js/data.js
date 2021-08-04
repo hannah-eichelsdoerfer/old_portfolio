@@ -169,4 +169,31 @@ const projects = [
   }
 ];
 
-export { projects };
+const indexProjects = [
+  {
+    title: "localshopper",
+    description: "Community platform for gift giving to loved ones in other countries.",
+    imgLight: "images/localshopper-white.gif",
+    imgDark: "images/localshopper-dark.gif"
+  },
+  {
+    title: "camperworld",
+    description: "AirBnB clone for renting camping equipment and campervans.",
+    imgLight: "images/camperworld-white.gif",
+    imgDark: "images/camperworld-dark.gif"
+  }, 
+  {
+    title: "localshopper2",
+    description: "Community platform for gift giving to loved ones in other countries.",
+    imgLight: "images/localshopper-white.gif",
+    imgDark: "images/localshopper-dark.gif"
+  },
+  {
+    title: "camperworld2",
+    description: "AirBnB clone for renting camping equipment and campervans.",
+    imgLight: "images/camperworld-white.gif",
+    imgDark: "images/camperworld-dark.gif"
+  }
+];
+
+export { projects, indexProjects };

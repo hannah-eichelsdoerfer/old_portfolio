@@ -25,6 +25,10 @@
   width: 100%;
 }
 
+.pc-content {
+  padding: 10px 20px;
+}
+
 .project-card-content {
   display: flex;
   justify-content: space-between;

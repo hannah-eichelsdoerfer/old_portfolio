@@ -7,14 +7,14 @@
 
 #navbar-links {
   display: none;
-  width: 100%;
-  flex-direction: column;
   z-index: 100;
 }
 
 #navbar-links.show {
   display: flex;
   padding: 20px 0;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .navbar-link {
@@ -28,6 +28,7 @@
   font-size: 20px;
   cursor: pointer;
   transition: all 0.5s ease-in;
+  z-index: 10;
 }
 
 @media (min-width: 760px) {

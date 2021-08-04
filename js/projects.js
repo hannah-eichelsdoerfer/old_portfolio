@@ -5,7 +5,7 @@ import { projects } from "./data.js";
 const projectsContainer = document.querySelector(".more-projects");
 
 projects.forEach(project => {
-  console.log(project)
+  // console.log(project);
   const projectCard = `
   <div class="project-card">
     <div class="project-card-content">

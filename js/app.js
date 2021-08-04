@@ -1,5 +1,7 @@
 'use strict';
 
+import { indexProjects } from "./data.js";
+
 // Smooth nav link transition
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (event) {
@@ -49,6 +51,23 @@ let typed = new Typed(header, {
   loop: true,
   typeSpeed: 90,
 });
+
+// JavaScript Data Projects
+const projectsContainer = document.querySelector(".projects");
+const theme2 = localStorage.getItem("darkMode");
+
+indexProjects.forEach((project) => {
+  const projectCard = `
+    <div class="project-card" id="${project.title}" >
+      <img src="${theme2 === 'dark' ? project.imgDark : project.imgLight}" alt="">
+      <div class="pc-content">
+        <h4>${project.title.toUpperCase()}</h4>
+        <p><small>${project.description}</small></p>
+      </div>
+    </div>
+  `;
+  projectsContainer.insertAdjacentHTML('afterbegin', projectCard);
+})
 
 // MODALS ON CARDS
 const modals = document.querySelectorAll(".modal");
@@ -102,9 +121,17 @@ const customButtons = document.querySelectorAll(".custom-button");
 const inputs = document.querySelectorAll("input");
 const textarea = document.querySelector("textarea");
 
+// const test = indexProjects.find((element) => element.title === "localshopper");
+// console.log(test);
+
 const darkThings = function() {
   projectCards.forEach(card => {
     card.classList.toggle("dark-card");
+    const cardImage = card.querySelector("img");
+    const idAttribute = card.getAttribute("id");
+    const test = indexProjects.find((element) => element.title === `${idAttribute}`);
+    // cardImage.src.replace(/.*(?=images)/, "") === test.imgLight ? cardImage.src = test.imgLight : cardImage.src = test.imgDark;
+    theme === 'dark' ? cardImage.src = test.imgLight : cardImage.src = test.imgDark;
   });
   customButtons.forEach(button => {
     button.classList.toggle("dark-btn")
@@ -133,10 +160,22 @@ themeToggle.addEventListener("click", () => {
 
   if (theme !== "dark") {
     toggleDarkMode();
+    // projectCards.forEach(card => {
+    //   const cardImage = card.querySelector("img");
+    //   const idAttribute = card.getAttribute("id");
+    //   const test = indexProjects.find((element) => element.title === `${idAttribute}`);
+    //   cardImage.src = test.imgDark;
+    // });
     theme = localStorage.setItem("darkMode", "dark");
     // console.log(theme);
   } else {
     toggleDarkMode();
+    // projectCards.forEach(card => {
+    //   const cardImage = card.querySelector("img");
+    //   const idAttribute = card.getAttribute("id");
+    //   const test = indexProjects.find((element) => element.title === `${idAttribute}`);
+    //   cardImage.src = test.imgLight;
+    // });
     theme = localStorage.setItem('darkMode', null);
     // console.log(theme);
   }
@@ -149,22 +188,13 @@ if(theme === 'dark') {
 };
 
 // Horizontal Scroll
-const projects = document.querySelector(".projects")
+const projects = document.querySelector(".projects");
+// console.log(projects);
 
 if (window.screen.width >= 1200) {
-  console.log("Over 1200px screen size 🎉")
   projects.addEventListener('wheel', (ev) => {
     ev.preventDefault();  // stop scrolling in another direction
     projects.scrollLeft += (ev.deltaY + ev.deltaX);
-    // if (!ev.shiftKey) {}
-    // while (projects.scrollLeft < 1200) {
-    //   ev.preventDefault();
-    //   projects.scrollLeft += (ev.deltaY + ev.deltaX);
-    // }
-    
-    // if (projects.scrollLeft >= 1100) {
-    //   console.log("THE END");
-    // }
   });
   projects.addEventListener("DOMMouseScroll", (ev) => {
     ev.preventDefault();  // stop scrolling in another direction
@@ -172,6 +202,24 @@ if (window.screen.width >= 1200) {
   });
 }
 
+// window.addEventListener('resize', (event) => {
+//   console.log(event.currentTarget)
+//   if (window.screen.width >= 1200) {
+//     console.log("Resizing to big screensize 🎉")
+//     horizontalScroll();
+//   }
+// }, true);
+
+// Tests to check if end of horizontal scroll
+// if (!ev.shiftKey) {}
+// while (projects.scrollLeft < 1200) {
+//   ev.preventDefault();
+//   projects.scrollLeft += (ev.deltaY + ev.deltaX);
+// }
+
+// if (projects.scrollLeft >= 1100) {
+//   console.log("THE END");
+// }
 
 
 // document.addEventListener('wheel', function(e)
