@@ -1,6 +1,6 @@
 'use strict';
 
-import { projects } from "./data.js";
+import { programmingLanguages, projects } from "./data.js";
 
 const projectsContainer = document.querySelector(".more-projects");
 
@@ -22,3 +22,93 @@ projects.forEach(project => {
   </div>`;
   projectsContainer.insertAdjacentHTML('beforeend', projectCard);
 });
+
+// Dark Mode Toggle
+let theme = localStorage.getItem("darkMode");
+const body = document.querySelector('body');
+const themeToggle = document.querySelector("label");
+const sun = document.querySelector(".sun-icon");
+const moon = document.querySelector(".moon-icon");
+
+// More Dark Mode
+const projectCards = document.querySelectorAll(".project-card");
+const customButtons = document.querySelectorAll(".custom-button");
+const inputs = document.querySelectorAll("input");
+const textarea = document.querySelector("textarea");
+
+// const test = indexProjects.find((element) => element.title === "localshopper");
+// console.log(test);
+
+const darkThings = function() {
+  projectCards.forEach(card => {
+    card.classList.toggle("dark-card");
+  });
+  customButtons.forEach(button => {
+    button.classList.toggle("dark-btn")
+  });
+  inputs.forEach(input => {
+    input.classList.toggle("dark-form")
+  });
+};
+
+// Default: 
+sun.classList.add("hidden");
+
+const toggleDarkMode = () => { 
+  // console.log(body.classList)
+  body.classList.toggle('bg-dark');
+  moon.classList.toggle("hidden");
+  sun.classList.toggle("hidden");
+  // console.log("TEEEEST");
+  darkThings();
+};
+
+themeToggle.addEventListener("click", () => {
+  theme = localStorage.getItem("darkMode");
+
+  // projectCards.forEach(card => {
+  //   const cardImage = card.querySelector("img");
+  //   const idAttribute = card.getAttribute("id");
+  //   const test = indexProjects.find((element) => element.title === `${idAttribute}`);
+  //   // cardImage.src.replace(/.*(?=images)/, "") === test.imgLight ? cardImage.src = test.imgLight : cardImage.src = test.imgDark;
+  //   theme === 'dark' ? cardImage.src = test.imgLight : cardImage.src = test.imgDark;
+  // });
+
+  if (theme !== "dark") {
+    toggleDarkMode();
+    theme = localStorage.setItem("darkMode", "dark");
+    // console.log(theme);
+  } else {
+    toggleDarkMode();
+    theme = localStorage.setItem('darkMode', null);
+    // console.log(theme);
+  }
+});
+
+// Check dark mode is on or off on page reload
+if (theme === 'dark') {
+  toggleDarkMode();
+  sun.classList.remove("hidden");
+};
+
+// Filter programming Languages to see only projects in this language
+
+const languages = document.querySelector("#filter-languages");
+
+languages.insertAdjacentHTML("afterbegin", programmingLanguages.join(""))
+
+const svgElements = document.querySelectorAll("svg");
+svgElements.forEach((svg) => {
+  svg.addEventListener("click", (event) => {
+    // console.log(event.target);
+    // const array = Array.from(projectCards)
+    console.log(svg.getAttribute("id"));
+    // projects.filter((card) => {
+      // console.log(card)
+      // console.log(card.programmingLangues.includes(event.currentTarget))
+      // console.log(card.programmingLangues, event.currentTarget);
+      // console.log("-----");
+      // return card.programmingLangues === event.currentTarget;
+    // })
+  });
+})

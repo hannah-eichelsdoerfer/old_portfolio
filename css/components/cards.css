@@ -6,7 +6,10 @@
   cursor: pointer;
   background-color: #FFFFFF;
   color: #333333;
-  margin: 20px;
+}
+
+.projects .project-card {
+  margin: 0 10px;
 }
 
 /* #localshopper, #camperworld {
