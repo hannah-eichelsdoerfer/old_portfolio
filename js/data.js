@@ -189,8 +189,8 @@ const indexProjects = [
   {
     title: "Keeper",
     description: "Llearned all about react.js through creating this replica of the Google Keep App (data will not persist, focus with this projectt was on learning react.js, so database is not added yet).",
-    imgLight: "images/camperworld-white.gif",
-    imgDark: "images/camperworld-dark.gif"
+    imgLight: "images/keeper-white.jpg",
+    imgDark: "images/keeper-dark.jpg"
   },
   {
     title: "camperworld",
