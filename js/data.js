@@ -183,8 +183,8 @@ const indexProjects = [
   {
     title: "Yelp Camp",
     description: "Community platform for gift giving to loved ones in other countries.",
-    imgLight: "images/localshopper-white.gif",
-    imgDark: "images/localshopper-dark.gif"
+    imgLight: "",
+    imgDark: ""
   },
   {
     title: "Keeper",
