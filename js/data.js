@@ -182,7 +182,7 @@ const projects = [
 const indexProjects = [
   {
     title: "Yelp Camp",
-    description: "Community platform for gift giving to loved ones in other countries.",
+    description: "Web application designed to add, rate and review different campgrounds.",
     imgLight: "",
     imgDark: ""
   },
