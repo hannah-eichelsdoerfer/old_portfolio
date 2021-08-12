@@ -6,6 +6,7 @@
   cursor: pointer;
   background-color: #FFFFFF;
   color: #333333;
+  border-radius: 15px;
 }
 
 .projects .project-card {

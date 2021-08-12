@@ -54,156 +54,186 @@ const python = `
 </svg>
 `;
 
-const programmingLanguages = [html, css, javaScript, react, node, express, mongoDB, postgreSQL, ruby, rails, python]
+const programmingLanguages = [
+  html,
+  css,
+  javaScript,
+  react,
+  node,
+  express,
+  mongoDB,
+  postgreSQL,
+  ruby,
+  rails,
+  python,
+];
 
 const projects = [
   {
-    title: "Bankist",
+    title: 'Bankist',
     programmingLangues: [html, css, javaScript],
-    description: "Banking App",
-    githubLink: "https://github.com/hannah-eichelsdoerfer/bankist",
-    liveLink: "https://hannah-eichelsdoerfer.github.io/bankist/",
-    projectImage: ""
+    description: 'Banking App',
+    githubLink: 'https://github.com/hannah-eichelsdoerfer/bankist',
+    liveLink: 'https://hannah-eichelsdoerfer.github.io/bankist/',
+    projectImage: '',
   },
   {
-    title: "Portfolio",
+    title: 'Portfolio',
     programmingLangues: [html, css, javaScript],
-    description: "Personal website built mainly in Vanilla JavaScript to solidify the concepts.",
-    githubLink: "https://github.com/hannah-eichelsdoerfer/portfolio",
-    liveLink: "https://hannaheich.com",
-    projectImage: ""
-  }, 
+    description:
+      'Personal website built mainly in Vanilla JavaScript to solidify the concepts.',
+    githubLink: 'https://github.com/hannah-eichelsdoerfer/portfolio',
+    liveLink: 'https://hannaheich.com',
+    projectImage: '',
+  },
   {
-    title: "Habit Tracker",
+    title: 'Habit Tracker',
     programmingLangues: [ruby, rails],
-    description: "Tracking daily habits for forming better habits",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  },  
+    description: 'Tracking daily habits for forming better habits',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
   {
-    title: "Expense Tracker",
+    title: 'Expense Tracker',
     programmingLangues: [ruby, rails, postgreSQL],
-    description: "",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  },  
+    description: '',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
   {
-    title: "Social Media App",
+    title: 'Social Media App',
     programmingLangues: [react],
-    description: "",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  },  
+    description: '',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
   {
-    title: "Travel Blog",
+    title: 'Travel Blog',
     programmingLangues: [javaScript, node, express, mongoDB],
-    description: "Blog, functionality to write new entries, edit entries ...",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  },  
+    description: 'Blog, functionality to write new entries, edit entries ...',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
   {
-    title: "UI Component Library",
+    title: 'UI Component Library',
     programmingLangues: [react],
-    description: "",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  },  
+    description: '',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
   {
-    title: "Animations",
+    title: 'Animations',
     programmingLangues: [html, css],
-    description: "",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  }, 
+    description: '',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
   {
-    title: "Tic Tac Toe",
+    title: 'Tic Tac Toe',
     programmingLangues: [python],
-    description: "",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  },  
+    description: '',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
   {
-    title: "Chat Bot",
+    title: 'Chat Bot',
     programmingLangues: [python],
-    description: "Automated Messaging",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  },  
+    description: 'Automated Messaging',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
   {
-    title: "To-Do List",
+    title: 'To-Do List',
     programmingLangues: [html, css, javaScript, mongoDB],
-    description: "Simple tick of to-do-list",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  },  
+    description: 'Simple tick of to-do-list',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
   {
-    title: "Bookspired",
+    title: 'Bookspired',
     programmingLangues: [ruby, rails],
-    description: "Goodreads Clone",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  },  
+    description: 'Goodreads Clone',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
   {
-    title: "Weather",
+    title: 'Weather',
     programmingLangues: [],
-    description: "Weather API Scraping",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  },  
+    description: 'Weather API Scraping',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
   {
-    title: "Calculator",
+    title: 'Calculator',
     programmingLangues: [javaScript],
-    description: "",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  },  
+    description: '',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
   {
-    title: "diceGame",
+    title: 'diceGame',
     programmingLangues: [javaScript],
-    description: "",
-    githubLink: "",
-    liveLink: "",
-    projectImage: ""
-  }
+    description: '',
+    githubLink: '',
+    liveLink: '',
+    projectImage: '',
+  },
 ];
 
 const indexProjects = [
   {
-    title: "Yelp Camp",
-    description: "Web application designed to add, rate and review different campgrounds.",
-    imgLight: "",
-    imgDark: ""
+    title: 'Yelp Camp',
+    description:
+      'Web application designed to add, rate and review different campgrounds.',
+    programmingLangues: [javaScript, mongoDB],
+    imgLight: '',
+    imgDark: '',
   },
   {
-    title: "Keeper",
-    description: "Llearned all about react.js through creating this replica of the Google Keep App (data will not persist, focus with this projectt was on learning react.js, so database is not added yet).",
-    imgLight: "images/keeper-white.jpg",
-    imgDark: "images/keeper-dark.jpg"
+    title: 'Watch List',
+    description:
+      'Save your favourite movies with custom image cover upload over Cloudify.',
+    programmingLangues: [javaScript, mongoDB],
+    imgLight: 'images/watch-list-white.jpg',
+    imgDark: 'images/watch-list-dark.jpg',
+    live: '',
+    github: '',
   },
   {
-    title: "camperworld",
-    description: "AirBnB clone for renting camping equipment and campervans.",
-    imgLight: "images/camperworld-white.gif",
-    imgDark: "images/camperworld-dark.gif"
+    title: 'Keeper',
+    description:
+      'Learned all about react.js through creating this replica of the Google Keep App (data will not persist, focus with this projectt was on learning react.js, so database is not added yet).',
+    programmingLangues: [javaScript, mongoDB],
+    imgLight: 'images/keeper-white.jpg',
+    imgDark: 'images/keeper-dark.jpg',
   },
   {
-    title: "localshopper",
-    description: "Community platform for gift giving to loved ones in other countries.",
-    imgLight: "images/localshopper-white.gif",
-    imgDark: "images/localshopper-dark.gif"
-  }
+    title: 'camperworld',
+    description: 'AirBnB clone for renting camping equipment and campervans.',
+    programmingLangues: [javaScript, mongoDB],
+    imgLight: 'images/camperworld-white.gif',
+    imgDark: 'images/camperworld-dark.gif',
+  },
+  {
+    title: 'localshopper',
+    description:
+      'Community platform for gift giving to loved ones in other countries.',
+    programmingLangues: [javaScript, mongoDB],
+    imgLight: 'images/localshopper-white.gif',
+    imgDark: 'images/localshopper-dark.gif',
+  },
 ];
 
 export { programmingLanguages, projects, indexProjects };
