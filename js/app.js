@@ -80,16 +80,11 @@ const createModal = (clicked) => {
   const projectModal = indexProjects.find(
     (project) => project.title.split(' ').join('-') === clicked
   );
-  const modal = `<div class="modal" id="">
+  const modal = `<div class="modal ${theme2 === "dark" ? "dark-card" : ""}" id="">
   <button class="close-modal">&times;</button>
   <h1>${projectModal.title}</h1>
   <p>
     ${projectModal.programmingLangues.join('')}
-    <span class="pill-button">Ruby on Rails</span> | 
-    <span class="pill-button">JavaScript</span> | 
-    <span class="pill-button">Bootstrap</span> |  
-    <span class="pill-button">SCSS</span> | 
-    <span class="pill-button">PostgreSQL</span>
   </p>
   <p>${projectModal.description}</p>
   <div class="project-card-links">
@@ -202,9 +197,10 @@ const darkThings = function () {
     input.classList.toggle('dark-form');
   });
   textarea.classList.toggle('dark-form');
-  modals.forEach((modal) => {
-    modal.classList.toggle('dark-card');
-  });
+  // modal.classList.toggle('dark-card');
+  // modals.forEach((modal) => {
+  //   modal.classList.toggle('dark-card');
+  // });
 };
 
 // Default:

@@ -205,7 +205,7 @@ const indexProjects = [
     title: 'Watch List',
     description:
       'Save your favourite movies with custom image cover upload over Cloudify.',
-    programmingLangues: [javaScript, mongoDB],
+    programmingLangues: [ruby, rails, postgreSQL],
     imgLight: 'images/watch-list-white.jpg',
     imgDark: 'images/watch-list-dark.jpg',
     live: '',
@@ -215,14 +215,14 @@ const indexProjects = [
     title: 'Keeper',
     description:
       'Learned all about react.js through creating this replica of the Google Keep App (data will not persist, focus with this projectt was on learning react.js, so database is not added yet).',
-    programmingLangues: [javaScript, mongoDB],
+    programmingLangues: [react],
     imgLight: 'images/keeper-white.jpg',
     imgDark: 'images/keeper-dark.jpg',
   },
   {
     title: 'camperworld',
     description: 'AirBnB clone for renting camping equipment and campervans.',
-    programmingLangues: [javaScript, mongoDB],
+    programmingLangues: [ruby, rails, postgreSQL],
     imgLight: 'images/camperworld-white.gif',
     imgDark: 'images/camperworld-dark.gif',
   },
@@ -230,7 +230,7 @@ const indexProjects = [
     title: 'localshopper',
     description:
       'Community platform for gift giving to loved ones in other countries.',
-    programmingLangues: [javaScript, mongoDB],
+    programmingLangues: [ruby, rails, postgreSQL],
     imgLight: 'images/localshopper-white.gif',
     imgDark: 'images/localshopper-dark.gif',
   },

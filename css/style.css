@@ -77,7 +77,7 @@ a:hover {
   grid-gap: 1rem;
 }
 
-svg, .more-projects svg {
+.more-projects svg {
   height: 15px;
 }
 
