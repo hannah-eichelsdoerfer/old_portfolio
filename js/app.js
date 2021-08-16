@@ -95,39 +95,7 @@ const createModal = (clicked) => {
       projectModal.live
     }" target="blank">Live <i class="fas fa-external-link-alt"></i></a>
   </div>
-  <div class="modal-content">
-    <div>
-      <img src="${projectModal.imgLight}" alt="">
-    </div>
-    <div>
-      <img src="images/camperworld/all-listings.png" alt="">
-      <p>All available Listings</p>
-    </div>
-    <div>
-      <p>Map Display</p>
-      <img src="images/camperworld/map.png" alt="">
-    </div>
-    <div>
-      <img src="images/camperworld/search.png" alt="">
-      <p>Search per City</p>
-    </div>
-    <div>
-      <p>My Reservations Overview</p>
-      <img src="images/camperworld/reservations.png" alt="">
-    </div>
-    <div>
-      <img src="images/camperworld/listings.png" alt="">
-      <p>My Listings Overview</p>
-    </div>
-    <div>
-      <div>
-        <p>Authentication and Authorization</p>
-        <p><small>Devise and Pundit</small></p>
-      </div>
-      <img src="images/camperworld/login.png" alt="">
-    </div>
-  </div>
-</div>`;
+  <img src="${theme2 === 'dark' ? projectModal.imgDark : projectModal.imgLight}" alt="">`;
   document.querySelector('body').insertAdjacentHTML('afterbegin', modal);
 };
 

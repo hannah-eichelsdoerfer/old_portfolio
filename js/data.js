@@ -208,8 +208,8 @@ const indexProjects = [
     programmingLangues: [ruby, rails, postgreSQL],
     imgLight: 'images/watch-list-white.jpg',
     imgDark: 'images/watch-list-dark.jpg',
-    live: '',
-    github: '',
+    live: 'https://my-rails-movie-watch-list.herokuapp.com/',
+    github: 'https://github.com/hannah-eichelsdoerfer/rails-watch-list',
   },
   {
     title: 'Keeper',
@@ -225,6 +225,8 @@ const indexProjects = [
     programmingLangues: [ruby, rails, postgreSQL],
     imgLight: 'images/camperworld-white.gif',
     imgDark: 'images/camperworld-dark.gif',
+    live: 'https://camperworld.herokuapp.com/',
+    github: 'https://github.com/hannah-eichelsdoerfer/rails-camperworld',
   },
   {
     title: 'localshopper',
@@ -233,6 +235,8 @@ const indexProjects = [
     programmingLangues: [ruby, rails, postgreSQL],
     imgLight: 'images/localshopper-white.gif',
     imgDark: 'images/localshopper-dark.gif',
+    live: 'https://www.localshopper.me/',
+    github: 'https://github.com/hannah-eichelsdoerfer/local_shopper',
   },
 ];
 
