@@ -197,7 +197,7 @@ const indexProjects = [
     title: 'Yelp Camp',
     description:
       'Web application designed to add, rate and review different campgrounds.',
-    programmingLangues: [javaScript, mongoDB],
+    programmingLangues: [html, css, javaScript, node, mongoDB],
     imgLight: '',
     imgDark: '',
   },

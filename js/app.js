@@ -52,6 +52,12 @@ let typed = new Typed(header, {
   typeSpeed: 90,
 });
 
+// Capitalize
+const capitalizeFirstLetter = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+
 // JavaScript Data Projects
 const projectsContainer = document.querySelector('.projects');
 const theme2 = localStorage.getItem('darkMode');
@@ -63,7 +69,7 @@ indexProjects.forEach((project) => {
         theme2 === 'dark' ? project.imgDark : project.imgLight
       }" alt="">
       <div class="pc-content">
-        <h4>${project.title.toUpperCase()}</h4>
+        <h4>${project.title}</h4>
         <p><small>${project.description}</small></p>
       </div>
     </div>

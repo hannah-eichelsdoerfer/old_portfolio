@@ -19,6 +19,10 @@
   overflow: auto; /* Enable scroll if needed */
 }
 
+.modal h1 {
+  text-transform: capitalize;
+}
+
 .overlay {
   position: fixed;
   top: 0;

@@ -21,6 +21,10 @@
   transform: scale(1.01);
 }
 
+.project-card h4 {
+  text-transform: capitalize;
+}
+
 .project-card h4, .project-card p {
   margin: 0;
 }
