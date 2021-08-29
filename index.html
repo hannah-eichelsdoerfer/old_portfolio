@@ -1,100 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Full-stack Developer. Passionate about creating innovative solutions aiming for smooth user 
-  experiences while keeping a high functionality and paying attention to details.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Full-stack Developer. Passionate about creating innovative solutions aiming for smooth user 
+  experiences while keeping a high functionality and paying attention to details."
+    />
 
-  <meta property="og:title" content="Hannah Eich | Full Stack Developer" />
-  <meta property="og:description" content="Personal Portfolio | Passionate about creating innovative solutions aiming for smooth user 
-  experiences while keeping a high functionality and paying attention to details." />
-  <meta property="og:type" content="Portfolio">
-  <meta property="og:image" name="image" content="images/portfolio.png" />
+    <meta property="og:title" content="Hannah Eich | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Personal Portfolio | Passionate about creating innovative solutions aiming for smooth user 
+  experiences while keeping a high functionality and paying attention to details."
+    />
+    <meta property="og:type" content="Portfolio" />
+    <meta property="og:image" name="image" content="images/portfolio.png" />
 
-  <title>Hannah Eich</title>
-  <link rel="shortcut icon" href="images/code.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/dark-style.css">
-  <link rel="stylesheet" href="css/components/buttons.css">
-  <link rel="stylesheet" href="css/components/cards.css">
-  <link rel="stylesheet" href="css/components/footer.css">
-  <link rel="stylesheet" href="css/components/form.css">
-  <link rel="stylesheet" href="css/components/navbar.css">
-  <link rel="stylesheet" href="css/components/modal.css">
+    <title>Hannah Eich</title>
+    <link rel="shortcut icon" href="images/code.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dark-style.css" />
+    <link rel="stylesheet" href="css/components/buttons.css" />
+    <link rel="stylesheet" href="css/components/cards.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+    <link rel="stylesheet" href="css/components/form.css" />
+    <link rel="stylesheet" href="css/components/navbar.css" />
+    <link rel="stylesheet" href="css/components/modal.css" />
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-</head>
-<body>
-  <nav>
-    <div id="navbar">
-      <div class="logo">
-        <a href="/"><i class="fas fa-code"></i> <strong>HANNAH EICH</strong> </a>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="navbar">
+        <div class="logo">
+          <a href="/"
+            ><i class="fas fa-code"></i> <strong>HANNAH EICH</strong>
+          </a>
+        </div>
+
+        <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div id="navbar-links">
+          <div class="navbar-link">
+            <a href="#projects">Projects</a>
+          </div>
+          <div class="navbar-link">
+            <a href="#about">About</a>
+          </div>
+          <div class="navbar-link">
+            <a href="#contact">Contact</a>
+          </div>
+          <div id="theme-toggler" class="navbar-link">
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <div class="sun-icon">
+                <i class="fas fa-sun"></i>
+              </div>
+              <div class="moon-icon">
+                <i class="fas fa-moon"></i>
+              </div>
+            </label>
+          </div>
+        </div>
       </div>
+    </nav>
 
-      <button class="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <div id="navbar-links">
-        <div class="navbar-link">
-          <a href="#projects">Projects</a>
-        </div>
-        <div class="navbar-link">
-          <a href="#about">About</a>
-        </div>
-        <div class="navbar-link">
-          <a href="#contact">Contact</a>
-        </div>
-        <div id="theme-toggler" class="navbar-link">
-          <input type="checkbox" class="checkbox" id="chk" />
-          <label class="label" for="chk">
-            <div class="sun-icon">
-              <i class="fas fa-sun"></i>
+    <main>
+      <div id="particles-js">
+        <div class="section">
+          <header>
+            <h1>Hi, I'm Hannah <span id="wave-emoji">👋🏼</span></h1>
+            <p><span id="typing"></span></p>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/hannah-eichelsdoerfer/"
+                target="blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/hannah-eichelsdoerfer" target="blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://codepen.io/hannah-eichelsdoerfer" target="blank"
+                ><i class="fab fa-codepen"></i
+              ></a>
             </div>
-            <div class="moon-icon">
-              <i class="fas fa-moon"></i>
-            </div>
-          </label>
+            <button id="bouncing-button">
+              <a href="#projects"
+                ><i
+                  class="fas fa-chevron-down"
+                  data-aos="fade-in"
+                  data-aos-duration="2000"
+                ></i
+              ></a>
+            </button>
+          </header>
         </div>
       </div>
-    </div>
-  </nav>
-  
-  <main>
-    <div id="particles-js">
-    <div class="section"> 
-      <header>
-        <h1> Hi, I'm Hannah <span id="wave-emoji">👋🏼</span></h1>
-        <p><span id="typing"></span></p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/hannah-eichelsdoerfer/" target="blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/hannah-eichelsdoerfer" target="blank"><i class="fab fa-github"></i></a>
-          <a href="https://codepen.io/hannah-eichelsdoerfer" target="blank"><i class="fab fa-codepen"></i></a>
-        </div>
-        <button id="bouncing-button"><a href="#projects"><i class="fas fa-chevron-down" data-aos="fade-in" data-aos-duration="2000"></i></a></button>
-      </header>
-    </div>
-  </div>
-  </main>
-  
+    </main>
+
     <div class="section projects-section">
       <h2 id="projects">&#60; Projects &#62;</h2>
-      <div class="projects" data-aos="fade-up" data-aos-duration="2000"  data-aos-mirror="true">
-
+      <div
+        class="projects"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-mirror="true"
+      >
         <div id="see-more-projects">
           <a href="/projects" id="see-more-projects-button">See more</a>
         </div>
       </div>
     </div>
-  
 
     <main>
-    <!-- <div class="modal hidden" id="localshopperModal">
+      <!-- <div class="modal hidden" id="localshopperModal">
       <button class="close-modal">&times;</button>
       <h1>Localshopper</h1>
       <p>
@@ -151,108 +186,174 @@
     
     -->
 
-    <div class="overlay hidden"></div>
+      <div class="overlay hidden"></div>
 
-    <div class="section">
-      <h2 id="about">&#60; About Me &#62;</h2>
-      <div id="about-picture-description">
-        <p id="about-description" data-aos="fade-right" data-aos-duration="2000">
-          I am a self-taught, as well as bootcamp graduate,
-          <strong>full-stack</strong> developer, eager to keep on learning. 
-          I am passionate about creating innovative solutions aiming for smooth user 
-          experiences while keeping a high functionality and paying attention to details.
-          I love organization and structure and therefore put a high emphasis on clean, elegant and efficient code with
-          a mobile-first approach to ensure responsive design.
-          <small><a href="/about">Read More</a></small>
-        </p>
-        <div class="image">
-          <img data-aos="fade-left" data-aos-duration="2000" width="250px" height="250px" class="profile-picture" src="images/hannah_eichelsdoerfer.jpg" alt="Portrait shot of Hannah Eichelsdoerfer">
-        </div>
-      </div>
-      <div id="about-me">
-        <div id="skills-container" data-aos="fade-right" data-aos-duration="2000">
-          <div>
-            <h3>LANGUAGES</h3>
-            <p>JavaScript</p>
-            <p>HTML</p>
-            <p>CSS/SCSS</p>
-            <p>Ruby</p>
-            <p>Python</p>
-            <p>SQL<small>(PostgreSQL)</small></p>
-          </div>
-          <div>
-            <h3>FRAMEWORKS</h3>
-            <p>Boostrap</p>
-            <p>React</p>
-            <p>Express</p>
-            <p>Ruby on Rails</p>
-          </div>
-          <div>
-            <h3>TOOLS</h3>
-            <p>Node.js</p>
-            <p>MongoDB</p>
-            <p>Postman</p> 
-            <p>Git & Github</p>
-          </div>
-        </div>
-        <div id="about-details" data-aos="fade-left" data-aos-duration="2000">
-          <p><i class="fas fa-map-marker-alt"></i> Berlin, Germany</p>
-          <div class="call-to-action">
-            <a href="resume_hannah_eichelsdoerfer.pdf" target="blank" class="custom-button" style="display: block">Resume</a>
-            <a href="#contact" class="custom-button" style="display: block">Contact Me</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 id="contact">&#60; Get in Touch &#62;</h2>
-      <div class="contact-container" data-aos="fade-up" data-aos-duration="2000">
-        <div>
-          <p>
-            Whether you are interested in starting a project together, looking for a junior developer to join your team, need a website, 
-            want to know more about me or simply want to conntect - feel free to reach out via email
-            <a href="mailto:hannaheichelsdoerfer@gmail.com" class="email">hannaheichelsdoerfer@gmail.com</a> or here directly:
+      <div class="section">
+        <h2 id="about">&#60; About Me &#62;</h2>
+        <div id="about-picture-description">
+          <p
+            id="about-description"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            I am a self-taught, as well as bootcamp graduate,
+            <strong>full-stack</strong> developer, eager to keep on learning. I
+            am passionate about creating innovative solutions aiming for smooth
+            user experiences while keeping a high functionality and paying
+            attention to details. I love organization and structure and
+            therefore put a high emphasis on clean, elegant and efficient code
+            with a mobile-first approach to ensure responsive design.
+            <small><a href="/about">Read More</a></small>
           </p>
-          <!-- <form action="sendemail.php" method="post"> -->
-          <form action="https://formsubmit.co/3766ee25e43b573ab50ef51286f0a2e6" method="post">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_next" value="http://hannaheich.com/thanks.html">
-  
-            <div class="form-details">
-              <div class="form-half">
-                <label for="name">
-                  <input type="text" name="name" id="name" autocomplete="off" placeholder="Name"/>
-                </label>
-              </div>
-              <div class="form-half">
-                <label for="email">
-                  <input required type="text" name="email" id="email" placeholder="Email" />
-                </label>
-              </div>
+          <div class="image">
+            <img
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              width="250px"
+              height="250px"
+              class="profile-picture"
+              src="images/hannah_eichelsdoerfer.jpg"
+              alt="Portrait shot of Hannah Eichelsdoerfer"
+            />
+          </div>
+        </div>
+        <div id="about-me">
+          <div
+            id="skills-container"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <div>
+              <h3>LANGUAGES</h3>
+              <p>JavaScript</p>
+              <p>HTML</p>
+              <p>CSS/SCSS</p>
+              <p>Ruby</p>
+              <p>Python</p>
+              <p>SQL<small>(PostgreSQL)</small></p>
             </div>
             <div>
-              <label for="subject">
-                <input name="subject" type="text" id="subject" placeholder="Subject">
-              </label>
+              <h3>FRAMEWORKS</h3>
+              <p>Boostrap</p>
+              <p>React</p>
+              <p>Express</p>
+              <p>Ruby on Rails</p>
             </div>
             <div>
-              <label for="message">
-                <textarea required id="message" name="message" rows="5" placeholder="Let's connect."></textarea>
-              </label>
+              <h3>TOOLS</h3>
+              <p>Node.js</p>
+              <p>MongoDB</p>
+              <p>Postman</p>
+              <p>Git & Github</p>
             </div>
-            <div class="form-buttons">
-              <!-- <button type="reset" name="reset" class="custom-button">Clear</button> -->
-              <button type="submit" name="submit" class="custom-button">Send Email <i class="far fa-paper-plane"></i></button>
+          </div>
+          <div id="about-details" data-aos="fade-left" data-aos-duration="2000">
+            <p><i class="fas fa-map-marker-alt"></i> Berlin, Germany</p>
+            <div class="call-to-action">
+              <a
+                href="resume_hannah_eichelsdoerfer.pdf"
+                target="blank"
+                class="custom-button"
+                style="display: block"
+                >Resume</a
+              >
+              <a href="#contact" class="custom-button" style="display: block"
+                >Contact Me</a
+              >
             </div>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
 
-  <!-- <div id="back-to-top"
+      <div class="section">
+        <h2 id="contact">&#60; Get in Touch &#62;</h2>
+        <div
+          class="contact-container"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <div>
+            <p>
+              Whether you are interested in starting a project together, looking
+              for a junior developer to join your team, need a website, want to
+              know more about me or simply want to connect - feel free to reach
+              out via email
+              <a href="mailto:hannaheichelsdoerfer@gmail.com" class="email"
+                >hannaheichelsdoerfer@gmail.com</a
+              >
+              or here directly:
+            </p>
+            <!-- <form action="sendemail.php" method="post"> -->
+            <form
+              action="https://formsubmit.co/3766ee25e43b573ab50ef51286f0a2e6"
+              method="post"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="text" name="_honey" style="display: none" />
+              <input
+                type="hidden"
+                name="_next"
+                value="http://hannaheich.com/thanks.html"
+              />
+
+              <div class="form-details">
+                <div class="form-half">
+                  <label for="name">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      autocomplete="off"
+                      placeholder="Name"
+                    />
+                  </label>
+                </div>
+                <div class="form-half">
+                  <label for="email">
+                    <input
+                      required
+                      type="text"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                    />
+                  </label>
+                </div>
+              </div>
+              <div>
+                <label for="subject">
+                  <input
+                    name="subject"
+                    type="text"
+                    id="subject"
+                    placeholder="Subject"
+                  />
+                </label>
+              </div>
+              <div>
+                <label for="message">
+                  <textarea
+                    required
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Let's connect."
+                  ></textarea>
+                </label>
+              </div>
+              <div class="form-buttons">
+                <!-- <button type="reset" name="reset" class="custom-button">Clear</button> -->
+                <button type="submit" name="submit" class="custom-button">
+                  Send Email <i class="far fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div id="back-to-top"
      data-aos="fade-in"
      data-aos-duration="1000"
      data-aos-anchor=".projects"
@@ -260,15 +361,13 @@
      <i class="fas fa-chevron-up bigger-icon"></i>
   </div> -->
 
-  <footer>
-    &#169; Hannah Eich, 2021
-  </footer>
+    <footer>&#169; Hannah Eich, 2021</footer>
 
-  <script src="/particles.js-master/particles.js"></script>
-  <!-- <script src="/particles.js-master/demo/js/app.js"></script> -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script type="module" src="js/app.js"></script>
-  <noscript>Your browser does not support JavaScript!</noscript>
-</body>
+    <script src="/particles.js-master/particles.js"></script>
+    <!-- <script src="/particles.js-master/demo/js/app.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="module" src="js/app.js"></script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+  </body>
 </html>

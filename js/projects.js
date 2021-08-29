@@ -4,20 +4,26 @@ import { programmingLanguages, projects } from './data.js';
 
 const projectsContainer = document.querySelector('.more-projects');
 
-projects.forEach((project) => {
-  // console.log(project);
-  const projectCard = `
-  <div class="project-card">
-    <div class="project-card-content">
-      <div>
-        <h4 class="project-title">${project.title}</h4>
-        ${project.programmingLangues.join('')}
-        <p class="project-description"><small>${project.description}</small></p>
+const displayProjects = (projects) => {
+  projectsContainer.innerHTML = '';
+  projects.forEach((project) => {
+    const projectCard = `
+    <div class="project-card">
+      <div class="project-card-content">
+        <div>
+          <h4 class="project-title">${project.title}</h4>
+          ${project.programmingLangues.join('')}
+          <p class="project-description"><small>${
+            project.description
+          }</small></p>
+        </div>
       </div>
-    </div>
-  </div>`;
-  projectsContainer.insertAdjacentHTML('beforeend', projectCard);
-});
+    </div>`;
+    projectsContainer.insertAdjacentHTML('beforeend', projectCard);
+  });
+};
+
+displayProjects(projects);
 
 /* <div class="project-card-links">
   <a href="${project.githubLink}" target="blank"><i class="fab fa-github"></i></a>
@@ -99,17 +105,21 @@ const languages = document.querySelector('#filter-languages');
 languages.insertAdjacentHTML('afterbegin', programmingLanguages.join(''));
 
 const svgElements = document.querySelectorAll('svg');
+
 svgElements.forEach((svg) => {
   svg.addEventListener('click', (event) => {
-    // console.log(event.target);
-    // const array = Array.from(projectCards)
-    console.log(svg.getAttribute('id'));
-    // projects.filter((card) => {
-    // console.log(card)
-    // console.log(card.programmingLangues.includes(event.currentTarget))
-    // console.log(card.programmingLangues, event.currentTarget);
-    // console.log("-----");
-    // return card.programmingLangues === event.currentTarget;
-    // })
+    const clickedLanguage = svg.getAttribute('id');
+    const mytest = [];
+
+    const filteredProjects = projects.filter((project) => {
+      project.programmingLangues.forEach((p) => {
+        console.log(p.includes(clickedLanguage));
+        if (p.includes(clickedLanguage)) {
+          mytest.push(project);
+        }
+      });
+    });
+
+    displayProjects(mytest);
   });
 });
