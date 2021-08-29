@@ -111,9 +111,8 @@ svgElements.forEach((svg) => {
     const clickedLanguage = svg.getAttribute('id');
     const mytest = [];
 
-    const filteredProjects = projects.filter((project) => {
+    projects.forEach((project) => {
       project.programmingLangues.forEach((p) => {
-        console.log(p.includes(clickedLanguage));
         if (p.includes(clickedLanguage)) {
           mytest.push(project);
         }
@@ -121,5 +120,14 @@ svgElements.forEach((svg) => {
     });
 
     displayProjects(mytest);
+
+    // const filteredProjects = projects.filter((project) => {
+    //   project.programmingLangues.forEach((p) => {
+    //     console.log(p.includes(clickedLanguage));
+    //   });
+    //   return project.programmingLangues.forEach((p) =>
+    //     p.includes(clickedLanguage)
+    //   );
+    // });
   });
 });
