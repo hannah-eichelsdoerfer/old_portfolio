@@ -79,7 +79,7 @@ button {
 } */
 
 .email {
-  color: #33333386;
+  color: inherit;
 }
 
 .close-modal {
