@@ -55,8 +55,7 @@ let typed = new Typed(header, {
 // Capitalize
 const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
+};
 
 // JavaScript Data Projects
 const projectsContainer = document.querySelector('.projects');
@@ -86,13 +85,15 @@ const createModal = (clicked) => {
   const projectModal = indexProjects.find(
     (project) => project.title.split(' ').join('-') === clicked
   );
-  const modal = `<div class="modal ${theme2 === "dark" ? "dark-card" : ""}" id="">
+  const modal = `<div class="modal ${
+    theme2 === 'dark' ? 'dark-card' : ''
+  }" id="">
   <button class="close-modal">&times;</button>
   <h1>${projectModal.title}</h1>
   <p>
     ${projectModal.programmingLangues.join('')}
   </p>
-  <p>${projectModal.description}</p>
+  <p>${projectModal.modalContent.info}</p>
   <div class="project-card-links">
     <a href="${
       projectModal.github
@@ -101,9 +102,21 @@ const createModal = (clicked) => {
       projectModal.live
     }" target="blank">Live <i class="fas fa-external-link-alt"></i></a>
   </div>
-  <img src="${theme2 === 'dark' ? projectModal.imgDark : projectModal.imgLight}" alt="">`;
+  <div class="modal-content">
+    <div>
+      <img src="${projectModal.modalContent.cover}" alt="">
+    </div>
+    ${projectModal.modalContent.showcase.join("")}
+  </div>`;
   document.querySelector('body').insertAdjacentHTML('afterbegin', modal);
 };
+
+{
+  /* <img
+  src="${ theme2 === 'dark' ? projectModal.imgDark : projectModal.imgLight}"
+  alt=''
+></img>; */
+}
 
 projectCards.forEach((card) => {
   card.addEventListener('click', (event) => {
@@ -192,12 +205,12 @@ themeToggle.addEventListener('click', () => {
 
   projectCards.forEach((card) => {
     const cardImage = card.querySelector('img');
-    const idAttribute = card.getAttribute('id').split(" ").join("-");
+    const idAttribute = card.getAttribute('id').split(' ').join('-');
     const test = indexProjects.find(
-      (element) => element.title === `${idAttribute.split("-").join(" ")}`
+      (element) => element.title === `${idAttribute.split('-').join(' ')}`
     );
 
-    console.log(test)
+    console.log(test);
     // cardImage.src.replace(/.*(?=images)/, "") === test.imgLight ? cardImage.src = test.imgLight : cardImage.src = test.imgDark;
     theme === 'dark'
       ? (cardImage.src = test.imgLight)

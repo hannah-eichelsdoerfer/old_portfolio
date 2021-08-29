@@ -200,24 +200,39 @@ const indexProjects = [
     programmingLangues: [html, css, javaScript, node, mongoDB],
     imgLight: '',
     imgDark: '',
+    modalContent: {
+      info: '',
+      cover: '',
+      showcase: [],
+    },
   },
   {
     title: 'Watch List',
     description:
       'Save your favourite movies with custom image cover upload over Cloudify.',
     programmingLangues: [ruby, rails, postgreSQL],
-    imgLight: 'images/watch-list-white.jpg',
-    imgDark: 'images/watch-list-dark.jpg',
+    imgLight: 'images/transparent.png',
+    imgDark: 'images/transparent.png',
     live: 'https://my-rails-movie-watch-list.herokuapp.com/',
     github: 'https://github.com/hannah-eichelsdoerfer/rails-watch-list',
+    modalContent: {
+      info: '',
+      cover: '',
+      showcase: [],
+    },
   },
   {
     title: 'Keeper',
     description:
-      'Learned all about react.js through creating this replica of the Google Keep App (data will not persist, focus with this projectt was on learning react.js, so database is not added yet).',
+      'Learned all about react.js through creating this replica of the Google Keep App (data will not persist, focus with this project was on learning react.js, so database is not added yet).',
     programmingLangues: [react],
     imgLight: 'images/keeper-white.jpg',
     imgDark: 'images/keeper-dark.jpg',
+    modalContent: {
+      info: '',
+      cover: '',
+      showcase: [],
+    },
   },
   {
     title: 'camperworld',
@@ -227,6 +242,18 @@ const indexProjects = [
     imgDark: 'images/camperworld-dark.gif',
     live: 'https://camperworld.herokuapp.com/',
     github: 'https://github.com/hannah-eichelsdoerfer/rails-camperworld',
+    modalContent: {
+      info: 'Developed in a team of 4 in one week (unfinished) as a preperation for the final project.',
+      cover: 'images/camperworld/landing-page.png',
+      showcase: [
+        '<div><img src="images/camperworld/all-listings.png"><p>All available Listings</p></div>',
+        '<div><p>Map Display</p><img src="images/camperworld/map.png"></div>',
+        '<div><images/camperworld/search.png"><p>Search per City</p></div>',
+        '<div><p>My Reservations Overview</p><img src="images/camperworld/reservations.png"></div>',
+        '<div><img src="images/camperworld/listings.png"><p>My Listings Overview</p></div>',
+        '<div><p>Authentication and Authorization <small>Devise and Pundit</small></p><img src="images/camperworld/login.png"></div>',
+      ],
+    },
   },
   {
     title: 'localshopper',
@@ -237,7 +264,36 @@ const indexProjects = [
     imgDark: 'images/localshopper-dark.gif',
     live: 'https://www.localshopper.me/',
     github: 'https://github.com/hannah-eichelsdoerfer/local_shopper',
+    modalContent: {
+      info: "Developed in a team of 4 in two weeks as a final project for Le Wagon's Coding Bootcamp.",
+      cover: 'images/localshopper/landing.png',
+      showcase: [
+        '<div><p>Introduction</p><img src="images/localshopper/how.png"></div>',
+        '<div><img src=""><p>Dashboard Mode Toggle</p></div>',
+        '<div><p>Chatroom Massenger</p><img src=""></div>',
+        '<div><img src=""><p>In Area</p></div>',
+        '<div><p>Leave Review</p><img src=""></div>',
+        '<div><img src=""><p>Pay with Stripe</p></div>',
+        '<div><p>Profile Page with Reviews</p><img src=""></div>',
+        '<div><img src=""><p>Pay with Stripe</p></div>',
+        '<div><p>Authentication and Authorization <small>Devise and Pundit</small></p><img src=""></div>',
+      ],
+    },
   },
+  // {
+  //   title: 'Mealz',
+  //   description: 'Food Ordering Application for Vegan Delivery.',
+  //   programmingLangues: [react, css, mongoDB],
+  //   imgLight: 'images/localshopper-white.gif',
+  //   imgDark: 'images/localshopper-dark.gif',
+  //   live: 'https://www.localshopper.me/',
+  //   github: 'https://github.com/hannah-eichelsdoerfer/food-ordering',
+  //   modalContent: {
+  //     info: "Built following Max Schwarzmueller's 'The Complete Course (incl Hooks, React Router, Redux)' on Udemy.",
+  //     cover: '',
+  //     showcase: [],
+  //   },
+  // },
 ];
 
 export { programmingLanguages, projects, indexProjects };
