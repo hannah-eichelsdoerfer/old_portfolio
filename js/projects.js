@@ -121,6 +121,20 @@ svgElements.forEach((svg) => {
 
     displayProjects(mytest);
 
+    svgElements.forEach((element) => {
+      element.classList.remove('filter');
+    });
+
+    event.currentTarget.classList.add('filter');
+
+    const filteredLanguage = document.querySelector('.filter');
+
+    filteredLanguage &&
+      filteredLanguage.addEventListener('click', (event) => {
+        filteredLanguage.classList.remove('filter');
+        displayProjects(projects);
+      });
+
     // const filteredProjects = projects.filter((project) => {
     //   project.programmingLangues.forEach((p) => {
     //     console.log(p.includes(clickedLanguage));
