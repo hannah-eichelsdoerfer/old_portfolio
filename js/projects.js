@@ -135,6 +135,8 @@ svgElements.forEach((svg) => {
         displayProjects(projects);
       });
 
+      // WHY ARE SVG ONLY CLICKABLE ONCE ON AND OFF?
+
     // const filteredProjects = projects.filter((project) => {
     //   project.programmingLangues.forEach((p) => {
     //     console.log(p.includes(clickedLanguage));

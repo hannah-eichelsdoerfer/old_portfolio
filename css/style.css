@@ -150,7 +150,7 @@ a:hover {
     padding: 4rem 6rem;
   }
 
-  #thanks-container, #more-about {
+  #thanks-container {
     height: calc(100vh - 115px);
     display: flex;
     align-items: center;
@@ -313,12 +313,14 @@ canvas {
 }
 
 /* ABOUT PAGE */
-.more-about {
-  overflow: hidden;
+.journey h2 {
+  margin-bottom: 80px;
 }
-
 .journey-step {
   border: 1px solid lightblue;
+  margin-bottom: 50px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 4px 10px rgb(0 0 0 / 8%)
 }
 .platform-icon {
   width: 50px;
@@ -336,10 +338,10 @@ canvas {
 
 .line {
   position: absolute;
-  top: calc(-7.5rem + 24px);
+  top: calc(7.5rem + 24px);
   left: calc(50% - 2px);
   width: 4px;
-  height: 100%;
+  height: 250%;
   display: block;
   background-color: lightblue;
   z-index: -100;
